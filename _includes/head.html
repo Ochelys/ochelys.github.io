@@ -5,11 +5,7 @@
 
   <link rel="icon" href="{{site.baseurl}}/favicon.ico">
 
-  {% if page.title %}
-  <title>{{ page.title }}</title>
-  {% else %}
-  <title>{{ site.title }}</title>
-  {% endif %}
+  <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 

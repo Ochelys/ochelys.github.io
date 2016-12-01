@@ -1,8 +1,8 @@
 # Site settings
-title: Ochelys, Prototypage et innovation par les usages
 description: >
   Notre métier, créer des sites et applications Web.
   Notre principe, s'adapter en continu aux utilisateurs.
+name: Ochelys
 
 # Build settings
 markdown: kramdown
