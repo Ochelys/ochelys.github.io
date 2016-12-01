@@ -6,6 +6,12 @@
   <link rel="icon" href="{{site.baseurl}}/favicon.ico">
 
   <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  
+  {% if page.lang == 'en' %}
+  <link rel="alternate" href="/" hreflang="fr" />
+  {% else %}
+  <link rel="alternate" href="/en" hreflang="en" />
+  {% endif %}
 
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 

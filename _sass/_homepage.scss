@@ -81,7 +81,8 @@ section {
   }
 }
 
-section#nos-methodes {
+#nos-methodes,
+#methodology {
   h3.methodes-heading {
     font-size: 1.5em;
     text-transform: initial;
@@ -108,7 +109,8 @@ section#nos-methodes {
   h2.section-heading {
     font-size: 40px;
   }
-  section#nos-methodes {
+  #nos-methodes,
+  #methodology {
     #iteration {
       background: url("/images/circle.png") center no-repeat;
       position: relative;
@@ -171,7 +173,8 @@ section#nos-methodes {
 }
 
 @media(min-width: 992px) {
-  section#nos-methodes {
+  #nos-methodes,
+  #methodology {
     #iteration {
       .methode {
         width: 20%;
@@ -212,7 +215,8 @@ section#nos-methodes {
   }
 }
 
-section#notre-equipe {
+#notre-equipe,
+#team {
   .section-heading {
     margin-bottom: .8em;
   }
@@ -252,7 +256,7 @@ section#contact {
   }
 }
 
-section#nos-locaux {
+#contact {
   address {
     font-size: 1.2em;
   }
@@ -288,7 +292,8 @@ section#nos-partenaires {
   }
 }
 
-section#nos-realisations {
+#nos-realisations,
+#projects {
   .section-heading {
     margin-bottom: .8em;
   }
