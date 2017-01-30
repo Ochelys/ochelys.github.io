@@ -13,6 +13,7 @@ var AnimatedHeader = (function () {
         setTimeout(scrollPage, 250);
       }
     }, false);
+    scrollPage();
   }
 
   function scrollPage() {
