@@ -1,55 +1,16 @@
-header {
-  text-align: center;
-  color: #fff;
-  background: #000 url("/images/working-together.jpg") no-repeat scroll top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.layout-home .jumbotron {
+  padding-bottom: 8em;
+  margin-bottom: 0;
 
-  .intro-text {
-    padding-top: 10em;
-    padding-bottom: 8em;
-
-    .intro-lead-in {
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 1.5em;
-      font-style: italic;
-    }
-
-    .intro-heading {
-      margin: 1em 0 1.4em;
-      font-size: 1.7em;
-      font-weight: 700;
-    }
+  @media(min-width:768px) {
+    padding-top: 18em;
+    padding-bottom: 18em;
   }
-
-  .tell-me-more {
-    padding: .8em;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
-
-  .container {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-
-@media(min-width:768px) {
-  header {
-    .intro-text {
-      padding-top: 18em;
-      padding-bottom: 18em;
-
-      .intro-lead-in {
-        font-size: 2.5em;
-      }
-
-      .intro-heading {
-        font-size: 2.7em;
-      }
-    }
+  
+  .jumbotron-text {
+    margin: 1em 0 1.4em;
+    font-size: 1.7em;
+    font-weight: 700;
   }
 }
 
