@@ -6,13 +6,9 @@
   <link rel="icon" href="{{site.baseurl}}/favicon.ico">
 
   <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
-  
-  {% if page.lang == 'en' %}
-  <link rel="alternate" href="/" hreflang="fr" />
-  {% else %}
-  <link rel="alternate" href="/en" hreflang="en" />
+  {% if page.alternate_path %}
+  <link rel="alternate" href="{{site.baseurl}}{{page.alternate_path}}" hreflang="{% if page.lang == 'en' %}fr{% else %}en{% endif %}" />
   {% endif %}
-
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!-- Latest compiled and minified Bootstrap CSS -->

@@ -19,7 +19,11 @@
         <li><a href="#nos-realisations" class="page-scroll">Nos réalisations</a></li>
         <li><a href="#notre-equipe" class="page-scroll">Notre équipe</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
+        {% if page.alternate_path %}
+        <li><a href="{{ page.alternate_path }}" lang="en">🇬🇧 English</a></li>
+        {% else %}
         <li><a href="/en" lang="en">🇬🇧 English</a></li>
+        {% endif %}
       </ul>
     </div>
   </div>
