@@ -1,8 +1,2 @@
 # Site settings
 name: Ochelys
-
-# Build settings
-markdown: kramdown
-exclude:
-  - Gemfile
-  - Gemfile.lock
