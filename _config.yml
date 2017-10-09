@@ -1,2 +1,5 @@
 # Site settings
 name: Ochelys
+
+# Live reload options
+livereload: true
