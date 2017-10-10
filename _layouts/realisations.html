@@ -11,18 +11,18 @@ layout: default
 
 <div class="container"> 
   <div class="row"> 
-    {% for project in page.realisations %}
+    {% for project in site.realisations %}
     <div class="col-xs-12 col-md-6">
       <div class="media well">
         <div class="media-left">
-          <a href="{{ site.baseurl }}/projets/{{ project.path }}">
-            <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.name }}" class="media-object img-responsive" />
+          <a href="{{ project.url }}">
+            <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="media-object img-responsive" />
           </a>
         </div>
         <div class="media-body">
-          <h2 class="media-heading">{{ project.name }}</h2>
+          <h2 class="media-heading">{{ project.title }}</h2>
           <p>{{ project.description }}</p>
-          <a href="{{ site.baseurl }}/projets/{{ project.path }}" class="btn btn-primary" title="{{ project.name }}">Plus d'infos</a>
+          <a href="{{ project.url }}" class="btn btn-primary" title="{{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
         </div>
       </div>
     </div>
