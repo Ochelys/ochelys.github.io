@@ -1,18 +1,18 @@
 .layout-home .jumbotron {
-  padding-bottom: 8em;
-  margin-bottom: 0;
-
-  @media(min-width:768px) {
-    padding-top: 18em;
-    padding-bottom: 18em;
-  }
+    padding-bottom: 8em;
+    margin-bottom: 0;
   
-  .jumbotron-text {
-    margin: 1em 0 1.4em;
-    font-size: 1.7em;
-    font-weight: 700;
+    @media(min-width:768px) {
+      padding-top: 18em;
+      padding-bottom: 18em;
+    }
+    
+    .jumbotron-text {
+      margin: 1em 0 1.4em;
+      font-size: 1.7em;
+      font-weight: 700;
+    }
   }
-}
 
 .modal {
   .modal-title {
@@ -272,6 +272,10 @@ section#nos-partenaires {
       position: relative;
       margin: 0 auto;
       border: 1px solid #f7f7f7;
+      
+      img {
+        margin: auto;
+      }
 
       .production-hover {
         position: absolute;

@@ -61,22 +61,24 @@ layout: default
       </div>
     </div>
     <div class="row main-productions">
+      {% for project in site.realisations limit: 2 %}
       <div class="col-sm-6">
         <div class="production-item center-block">
-          <a href="#tea" class="production-link" data-toggle="modal" data-target="#tea">
+          <a href="{{ project.url }}" class="production-link">
             <div class="production-hover">
               <div class="production-hover-content">
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img src="{{ site.url }}/images/tea.png" alt="TEA" class="img-responsive">
+            <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="img-responsive" />
           </a>
           <div class="production-caption">
-            <h3 class="h4" lang="en">TEA, The Ebook Alternative</h3>
-            <p class="text-muted">Études utilisateurs pour une plateforme <span lang="en">e-commerce</span> (Android, iOS, liseuse à encre numérique)</p>
+            <h3 class="h4">{{ project.title }}</h3>
+            <p class="text-muted">{{ project.description }}</p>
           </div>
         </div>
       </div>
+      {% endfor %}
       <div class="modal fade" id="tea" tabindex="-1" role="dialog" aria-labelledby="TEA, The Ebook Alternative" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -110,22 +112,6 @@ layout: default
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#groupama" class="production-link" data-toggle="modal" data-target="#groupama">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img src="{{ site.url }}/images/groupama.png" alt="Groupama" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Groupama</h3>
-            <p class="text-muted">Conception d'un prototype interactif pour un moteur de recherche de documents internes</p>
           </div>
         </div>
       </div>
