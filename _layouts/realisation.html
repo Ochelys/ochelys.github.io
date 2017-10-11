@@ -27,7 +27,9 @@ layout: default
         </div>
         {% if step.img %}
         <div class="media-right">
-          <img src="{{ site.baseurl }}/images/projects/{{ step.img }}" alt="{{ step.title | strip_html | normalize_whitespace | escape }}" class="step-img img-responsive" />
+          {% for src in step.img %}
+          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img img-responsive" />
+          {% endfor %}
         </div>
         {% endif %}
       </div>
