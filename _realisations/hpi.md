@@ -5,6 +5,10 @@ logo: hpi.png
 cover: hpi-cover.jpg
 description: <abbr>HPI</abbr> conçoit une solution permettant aux responsables <abbr>RH</abbr> de grandes entreprises d'évaluer la satisfaction interne grâce à des questionnaires interactifs.
 
+jumbotron:
+  title: <abbr>HPI</abbr> conçoit une solution permettant aux responsables <abbr>RH</abbr> de grandes entreprises d'évaluer la satisfaction interne grâce à des questionnaires interactifs.
+  description: Nous avons accompagné l'équipe <abbr>HPI</abbr> pour l'étude des besoins auprès d'utilisateurs, le maquettage d'interface, la conduite de tests, les recommandations de solutions techniques et du développement, des premières idées juqu'au lancement de la plate-forme en production.
+
 intervention: Prototypage, tests auprès d'utilisateurs, recommandations techniques
 
 steps:
