@@ -1,11 +1,21 @@
 .layout-realisation {
-  .jumbotron {
-    img {
+  .jumbotron-img {
       display: block;
-      margin: auto;
+    margin: 0 auto 2rem;
       background: #fff;
       border: 1px solid #ccc;
       border-radius: 3px;
     }
+  .jumbotron-title {
+    margin-top: 0;
+  }
+  .jumbotron-well {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    color: #444;
+    text-shadow: 0 0 2px #fff;
+    background: rgba(255,255,255,.75);
+  }
   }
 }
