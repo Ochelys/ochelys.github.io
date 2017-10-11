@@ -1,4 +1,9 @@
 .layout-home {
+  .navbar-inverse:not(.navbar-shrink) {
+    @media(min-width:768px) {
+      background-color: transparent;
+    }
+  }
   .jumbotron {
     padding-bottom: 8em;
     margin-bottom: 0;
