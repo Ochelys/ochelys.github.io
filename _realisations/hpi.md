@@ -5,6 +5,8 @@ logo: hpi.png
 cover: hpi-cover.jpg
 description: <abbr>HPI</abbr> conçoit une solution permettant aux responsables <abbr>RH</abbr> de grandes entreprises d'évaluer la satisfaction interne grâce à des questionnaires interactifs.
 
+intervention: Prototypage, tests auprès d'utilisateurs, recommandations techniques
+
 steps:
  - title: Phase de cadrage et recherche utilisateur
    description: Nous avons conduit des ateliers avec l'équipe <abbr>HPI</abbr> et mené des entretiens auprès d'équipes <abbr>RH</abbr> de grands groupes afin de clarifier l'offre de valeur apportée par <abbr>HPI</abbr> et de déterminer le positionnement de la première version.

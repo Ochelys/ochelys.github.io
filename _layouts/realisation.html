@@ -16,6 +16,9 @@ layout: default
   <div class="container">
     <div class="row">
       <h2>Notre intervention</h2>
+      {% if page.intervention %}
+      <p class="text-center">{{ page.intervention }}</p>
+      {% endif %}
       {% for step in page.steps %}
       <div class="media well step">
         <div class="media-body">
