@@ -3,7 +3,7 @@ layout: realisation
 title: <abbr>HPI</abbr>
 logo: hpi.png
 cover: hpi-cover.jpg
-description: <abbr>HPI</abbr> conçoit une solution permettant aux responsables <abbr>RH</abbr> de grandes entreprises d'évaluer la satisfaction interne grâce à des questionnaires interactifs.
+description: Conception d'une application de questionnaire ludique et interactif pour effectuer un baromètre social auprès des salariés de grands groupes.
 
 jumbotron:
   title: <abbr>HPI</abbr> conçoit une solution permettant aux responsables <abbr>RH</abbr> de grandes entreprises d'évaluer la satisfaction interne grâce à des questionnaires interactifs.
