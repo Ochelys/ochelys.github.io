@@ -22,6 +22,11 @@ layout: default
           <h3 class="media-heading"><span class="step-number">{{ forloop.index }} </span>{{ step.title }}</h3>
           <p>{{ step.description }}</p>
         </div>
+        {% if step.img %}
+        <div class="media-right">
+          <img src="{{ site.baseurl }}/images/projects/{{ step.img }}" alt="{{ step.title | strip_html | normalize_whitespace | escape }}" class="step-img img-responsive" />
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
