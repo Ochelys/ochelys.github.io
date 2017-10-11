@@ -16,7 +16,25 @@ layout: default
   <div class="container">
     <div class="row">
       <h2>Notre intervention</h2>
+      {% for step in page.steps %}
+      <div class="media well step">
+        <div class="media-body">
+          <h3 class="media-heading"><span class="step-number">{{ forloop.index }} </span>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="bg-black">
+    <div class="container">
       <h2>Résultats</h2>
+      <div class="well">{{ content }}</div>
+    </div>
+  </div>
+  <div class="bg-light-gray">
+    <div class="container">
+      <p class="back-link"><a href="/realisations/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Retour aux réalisations</a></p>
     </div>
   </div>
 </article>
