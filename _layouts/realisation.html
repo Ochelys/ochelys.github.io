@@ -4,16 +4,18 @@ layout: default
 
 {% assign project = page %}
 <div class="jumbotron" style="background-image: url({{ site.baseurl }}/images/projects/{{ project.cover }})">
-  <div class="container">
+<article>
+    <div class="container">
     <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="img-responsive" />
     <h1 class="jumbotron-title">{{ project.title }}</h1>
     <p class="jumbotron-text">{{ project.description }}</p>
+    </div>
   </div>
-</div>
-
-<div class="container"> 
-  <div class="row">
-    <h2>Notre intervention</h2>
-    <h2>Résultats</h2>
+  
+  <div class="container">
+    <div class="row">
+      <h2>Notre intervention</h2>
+      <h2>Résultats</h2>
+    </div>
   </div>
-</div>
+</article>
