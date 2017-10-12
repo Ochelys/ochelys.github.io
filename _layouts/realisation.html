@@ -21,7 +21,7 @@ layout: default
       {% endif %}
       {% for step in page.steps %}
       <div class="media well step">
-        <div class="media-body">
+        <div class="media-body step-text">
           <h3 class="media-heading"><span class="step-number">{{ forloop.index }} </span>{{ step.title }}</h3>
           <p>{{ step.description }}</p>
         </div>
@@ -32,7 +32,7 @@ layout: default
             {% assign fraction = 12 | divided_by:nb_img %}
           {% endif %}
           {% for src in step.img %}
-          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img {% if step.img.first %}px-0 col-md-{{ fraction }}{% endif %} img-responsive" />
+          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img {% if step.img.first %}px-0 col-xs-{{ fraction }}{% endif %} img-responsive" />
           {% endfor %}
         </div>
         {% endif %}
