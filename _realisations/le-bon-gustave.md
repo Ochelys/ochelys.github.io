@@ -10,7 +10,9 @@ intervention: Audit ergonomique, conduite de tests utilisateurs, recommandations
 steps:
   - title: Cadrage et audit ergonomique
     description: À partir de l'étude des données utilisateurs déjà recueillies par l'équipe, nous avons définit les profils utilisateurs et scénarios d'usages prioritaires, puis conduit un audit ergonomique afin de rendre l'application plus simple à utiliser.
-    img: le-bon-gustave-step-1.png
+    img:
+     - le-bon-gustave-step-1a.png
+     - le-bon-gustave-step-1b.png
   - title: Tests auprès de consommateurs de vin dans un restaurant
     description: Nous avons testé l'application auprès de 2 utilisateurs, consommateurs de vin occasionnels, dans un restaurant, et identifié des axes d'amélioration.
     img: le-bon-gustave-step-2.jpg
