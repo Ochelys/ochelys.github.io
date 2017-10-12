@@ -26,9 +26,13 @@ layout: default
           <p>{{ step.description }}</p>
         </div>
         {% if step.img %}
-        <div class="media-right step-illustration">
+        <div class="media-right step-illustration row">
+          {% if step.img.first %}
+            {% assign nb_img = step.img | size %}
+            {% assign fraction = 12 | divided_by:nb_img %}
+          {% endif %}
           {% for src in step.img %}
-          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img img-responsive" />
+          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img {% if step.img.first %}px-0 col-md-{{ fraction }}{% endif %} img-responsive" />
           {% endfor %}
         </div>
         {% endif %}
