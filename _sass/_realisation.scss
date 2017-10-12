@@ -68,6 +68,9 @@
       border-radius: 0;
     }
   }
+  .nav-link-text {
+    font-size: 120%;
+  }
   @media(min-width:768px) {
     .step {
       padding: 30px 2rem 0 4rem;
@@ -109,12 +112,15 @@
       margin-left: -2rem;
       margin-right: -1rem;
     }
+    .nav-justified > li {
+      display: table-cell;
+      width: 1%;
+      a {
+        margin: 0 1rem; // Prevent tap areas from butting up next to each other
       }
     }
+    .nav-link-text {
+      display: none;
     }
-  .back-link {
-    font-size: 120%;
-    margin: 1rem auto;
-    text-align: center;
   }
 }
