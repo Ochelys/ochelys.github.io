@@ -1,9 +1,13 @@
 ---
 layout: realisation
-title: Climb-up
+title: ClimbUp
 logo: climb-up.png
 cover: climb-up-cover.jpg
 description: Conception et réalisation d'une plateforme permettant de gérer des salles d'escalade. Déploiement sur plus de 10 salles en France.
+
+jumbotron:
+  title: Conception et réalisation d'un outil de gestion pour les salles d'escalade du groupe <span lang="en">ClimbUp</span>
+  description: Nous avons accompagné l'équipe <span lang="en">ClimbUp</span> pour la conception, le développement et le déploiement d'un outil <abbr>SaaS</abbr> permettant de gérer toutes les salles d'escalade du groupe.
 
 steps:
  - title: Mise en place de l'architecture <abbr>SaaS</abbr> et industrialisation des développements
