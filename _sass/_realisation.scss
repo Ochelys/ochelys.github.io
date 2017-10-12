@@ -49,6 +49,25 @@
       margin-left: -30px;
     }
   }
+  .step-img {
+    height: auto;
+    margin: auto;
+  }
+  .bg-black {
+    color: #fff;
+    margin-top: 2rem;
+    padding: 4rem 0 6rem;
+    
+    .well {
+      color: #444;
+      font-size: 120%;
+      margin: auto;
+      max-width: 500px;
+      border: 2px solid #98ca3d;
+      border-bottom-width: 5px;
+      border-radius: 0;
+    }
+  }
   @media(min-width:768px) {
     .step {
       padding: 30px 2rem 0 4rem;
@@ -90,26 +109,9 @@
       margin-left: -2rem;
       margin-right: -1rem;
     }
-  }
-  .step-img {
-    height: auto;
-    margin: auto;
-  }
-  .bg-black {
-    color: #fff;
-    margin-top: 2rem;
-    padding: 4rem 0 6rem;
-    
-    .well {
-      color: #444;
-      font-size: 120%;
-      margin: auto;
-      max-width: 500px;
-      border: 2px solid #98ca3d;
-      border-bottom-width: 5px;
-      border-radius: 0;
+      }
     }
-  }
+    }
   .back-link {
     font-size: 120%;
     margin: 1rem auto;
