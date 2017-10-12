@@ -5,9 +5,9 @@ layout: default
 <article>
   <div class="jumbotron" style="background-image: url({{ site.baseurl }}/images/projects/{{ page.cover }})">
     <div class="container">
-      <img src="{{ site.baseurl }}/images/projects/{{ page.logo }}" alt="{{ page.title | strip_html | normalize_whitespace | escape }}" class="jumbotron-img img-responsive" />
+      <h1><img src="{{ site.baseurl }}/images/projects/{{ page.logo }}" alt="{{ page.title | strip_html | normalize_whitespace | escape }}" class="jumbotron-img img-responsive" /></h1>
       <div class="jumbotron-well">
-        <h1 class="jumbotron-title">{% if page.jumbotron.title %}{{ page.jumbotron.title }}{% else %}{{ page.title }}{% endif %}</h1>
+        <p class="jumbotron-title">{% if page.jumbotron.title %}{{ page.jumbotron.title }}{% else %}{{ page.title }}{% endif %}</p>
         <p class="jumbotron-text">{% if page.jumbotron.description %}{{ page.jumbotron.description }}{% else %}{{ page.title }}{% endif %}</p>
       </div>
     </div>
