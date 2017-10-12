@@ -5,6 +5,7 @@ logo: le-bon-gustave.jpg
 cover: le-bon-gustave-cover.jpg
 description: Amélioration de l'expérience utilisateur et refonte d'une application mobile permettant de retrouver et commander facilement un vin que l'on apprécie.
 jumbotron:
+  title: Le Bon Gustave propose un service permettant de dénicher et commander un vin que l'on apprécie à partir d'une simple photo prise sur son <span lang="en">smartphone</span>.
   description: Nous avons accompagné l'équipe Le Bon Gustave pour la réalisation d'un audit ergonomique et de tests utilisateurs sur l'application mobile.
 intervention: Audit ergonomique, conduite de tests utilisateurs, recommandations d'ergonomie/<abbr>UX</abbr>
 steps:

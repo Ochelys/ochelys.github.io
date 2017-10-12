@@ -2,9 +2,11 @@
 layout: realisation
 title: Medeo
 logo: medeo.png
+cover: medeo-cover.png
 description: Conception et tests d'un outil permettant aux médecins généralistes d'utiliser facilement des objets connectés en consultation.
 
 jumbotron:
+  title: Medeo conçoit une solution permettant aux médecins généralistes d'utiliser facilement des objets connectés durant leurs consultations.
   description: Nous avons accompagné l'équipe Medeo pour l'étude des besoins auprès d'utilisateurs, le maquettage d'interfaces, et la conduite de tests auprès de médecins généralistes afin de concevoir une solution simple à comprendre et utiliser.
 
 intervention: Audit ergonomique, tests utilisateurs auprès de médecins, maquettage d'interfaces.

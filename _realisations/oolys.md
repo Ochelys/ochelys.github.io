@@ -6,6 +6,7 @@ cover: oolys-cover.png
 description: Conception d'un <span lang="en">serious game</span> destiné aux patients suivant un traitement d'orthodontie. Réalisation et lancement en test.
 
 jumbotron:
+  title: Oolys est un jeu destiné à motiver les enfants qui suivent un traitement orthodontique afin d'améliorer la qualité des soins.
   description: Nous avons réalisé une étude des besoins auprès d'orthodontistes et de patients, créé un prototype de livret et nous avons développé la plateforme de suivi pour orthodontistes et enfants. Nous conduisons actuellement des tests en situation réelle.
 
 intervention: Étude, prototypage, tests auprès d'enfants et d'orthodontistes, conception et développement de la solution.
