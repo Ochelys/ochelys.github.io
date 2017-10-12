@@ -26,7 +26,7 @@ layout: default
           <p>{{ step.description }}</p>
         </div>
         {% if step.img %}
-        <div class="media-right">
+        <div class="media-right step-illustration">
           {% for src in step.img %}
           <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img img-responsive" />
           {% endfor %}
