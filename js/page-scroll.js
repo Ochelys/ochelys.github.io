@@ -1,9 +1,17 @@
 $(function() {
   $('a.page-scroll').bind('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
-    }, 1000, 'easeInOutExpo');
-    event.preventDefault();
+    var target = this.hash;
+    var $target = $(target).offset();
+    if ($target) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: $target.top
+      }, 1000, 'easeInOutExpo', function() {
+        window.location.hash = target;
+      });
+    }
+    else {
+      window.location = '/' + target;
+    }
   });
 });
