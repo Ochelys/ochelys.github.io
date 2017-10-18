@@ -6,4 +6,5 @@ lang: en
 layout: home.en
 title: User research and agile development for great products
 description: We handcraft websites and applications, keeping users in the loop for maximum efficiency.
+alternate_path: /
 ---

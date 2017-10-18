@@ -1,2 +1,12 @@
 # Site settings
 name: Ochelys
+
+collections:
+  realisations:
+    output: true
+    defaults:
+      values:
+        layout: realisation
+
+# Live reload options
+livereload: true

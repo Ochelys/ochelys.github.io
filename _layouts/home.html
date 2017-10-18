@@ -2,18 +2,16 @@
 layout: default
 ---
 
-<header>
+<div class="jumbotron jumbotron-default-image">
   <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">Bienvenue dans notre atelier&nbsp;!</div>
-      <div class="intro-heading">
-        Notre métier, créer des sites et applications Web.<br>
-        Notre principe, s'adapter en continu aux utilisateurs.
-      </div>
-      <a href="#nos-methodes" class="page-scroll btn btn-primary btn-lg tell-me-more">Nos méthodes</a>
+    <h2 class="jumbotron-title">Bienvenue dans notre atelier&nbsp;!</div>
+    <div class="jumbotron-text">
+      Notre métier, créer des sites et applications Web.<br>
+      Notre principe, s'adapter en continu aux utilisateurs.
     </div>
+    <a href="#nos-methodes" class="page-scroll btn btn-primary btn-lg jumbotron-btn tell-me-more">Nos méthodes</a>
   </div>
-</header>
+</div>
 
 <section id="nos-methodes" class="bg-light-gray">
   <div class="container-fluid">
@@ -55,237 +53,39 @@ layout: default
   </div>
 </section>
 
-<section id="nos-realisations">
+<section id="nos-realisations" class="layout-realisations">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
+    <div class="row main-productions">
+      <div class="col-xs-12 text-center">
         <h2 class="section-heading">Quelques réalisations</h2>
       </div>
-    </div>
-    <div class="row main-productions">
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#tea" class="production-link" data-toggle="modal" data-target="#tea">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img src="{{ site.url }}/images/tea.png" alt="TEA" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4" lang="en">TEA, The Ebook Alternative</h3>
-            <p class="text-muted">Études utilisateurs pour une plateforme <span lang="en">e-commerce</span> (Android, iOS, liseuse à encre numérique)</p>
+      {% for project in site.realisations %}
+      <div class="col-xs-12 col-md-6">
+        <div class="media well">
+          <div class="media-left">
+            <h2 class="media-heading">
+              <a href="{{ project.url }}">
+                <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="media-object img-responsive" />
+              </a>
+            </h2>
+          </div>
+          <div class="media-body">
+            <p>{{ project.description }}</p>
+            <a href="{{ project.url }}" class="btn btn-primary" title="Plus d'informations sur {{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="tea" tabindex="-1" role="dialog" aria-labelledby="TEA, The Ebook Alternative" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
-              <h1 class="modal-title h3" lang="en">TEA, The Ebook Alternative</h1>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h2 class="h4">Problématique</h2>
-                    <p><abbr>TEA</abbr> rencontrait des difficultés dans la fidélisation de ses clients.</p>
-                    <p>L'équipe souhaitait donc réaliser une nouvelle version de leurs applications (Android / iOS) et de leur site e-commerce afin d'offrir la meilleure expérience possible d'achat et de lecture.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h2 class="h4">Actions</h2>
-                    <p>Ochelys a réalisé des tests utilisateurs en librairie pour étudier le tunnel de vente, la création des comptes utilisateurs, la synchronisation des livres numériques ainsi que les applications de lecture.</p>
-                    <p>27 tests scénarisés, portant sur 3 périphériques différents (tablette sous Android, iPad et liseuse à encre numérique), ont été conduits dans 2 librairies de la région Lyonnaise.</p>
-                    <img src="{{ site.url }}/images/tea-tests-utilisateurs.jpg" alt="Entretiens avec les utilisateurs" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                    <h2 class="h4">Résultats</h2>
-                    <p>Les études ont permis d'identifier une série d'amélioration d'interfaces ainsi que de mettre en exergue une problématique majeure bloquant l'adoption.</p>
-                    <p>Notre intervention a permis à <abbr>TEA</abbr> de redéfinir une partie de sa <span lang="en">roadmap</span> annuelle et d'éviter de réaliser des erreurs de conception majeures lors de la refonte des applications.</p>
-                    <img src="{{ site.url }}/images/tea-analyse.png" alt="Analyse des données des entretiens" class="img-responsive">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#groupama" class="production-link" data-toggle="modal" data-target="#groupama">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img src="{{ site.url }}/images/groupama.png" alt="Groupama" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Groupama</h3>
-            <p class="text-muted">Conception d'un prototype interactif pour un moteur de recherche de documents internes</p>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="groupama" tabindex="-1" role="dialog" aria-labelledby="Groupama" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
-              <h1 class="modal-title h3">Groupama</h1>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h2 class="h4">Problématique</h2>
-                    <p>Groupama <abbr>SA</abbr> est la maison-mère de la compagnie d'assurance Groupama.</p>
-                    <p>La direction Qualité, Méthodes et Budget souhaitait proposer à l'ensemble du groupe un nouvel outil de recherche de documents et de processus.</p>
-                    <p>Avant de lancer le développement, l'équipe devait réaliser un prototype afin de convaincre de l'intérêt de l'outil, de sa facilité d'utilisation, et de son adaptation aux besoins réels des utilisateurs.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h2 class="h4">Actions</h2>
-                    <p>Nous avons mis en place une démarche centrée utilisateur pour comprendre les besoins réels et créer un prototype interactif au format <abbr>HTML</abbr>/<abbr>CSS</abbr>.</p>
-                    <ul>
-                      <li>Création de personas et scénarios d'usages avec l'équipe <abbr title="Maitrîse d'ouvrage">MOA</abbr></li>
-                      <li>Observations et entretiens d'utilisateurs sur Lyon et Bordeaux</li>
-                      <li>Création de <span lang="en">Wireframes</span></li>
-                      <li>Création de maquettes graphiques</li>
-                      <li>Intégration sur un prototype interactif <abbr>HTML</abbr> 5 et <abbr>CSS</abbr> 3</li>
-                    </ul>
-                    <img src="{{ site.url }}/images/groupama-wireframe.png" alt="Prototype graphique" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                    <h2 class="h4">Résultats</h2>
-                    <p>Le prototype interactif a permis aux équipes techniques de produire un prototype fonctionnel.</p>
-                    <p>Avant de valider la réalisation d'un outil conséquent, le prototype permet de réaliser des tests avec les utilisateurs et des présentations en interne.</p>
-                    <img src="{{ site.url }}/images/groupama-prototype.png" alt="Maquette validée" class="img-responsive">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row auto-productions">
-      <div class="col-lg-12 text-center">
-        <h3 class="section-heading">Autoproductions</h3>
-      </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#oolys" class="production-link" data-toggle="modal" data-target="#oolys">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img src="{{ site.url }}/images/oolys.jpg" alt="Oolys" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Oolys</h3>
-            <p class="text-muted">Oolys est un jeu destiné à accompagner les enfants qui suivent un traitement orthodontique.</p>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="oolys" tabindex="-1" role="dialog" aria-labelledby="Oolys" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
-              <h1 class="modal-title h3">Oolys</h1>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h2 class="h4">Contexte</h2>
-                    <p>La motivation est essentielle dans un traitement orthodontique car le patient doit entretenir quotidiennement son appareil, en prendre soin, et porter régulièrement ses élastiques.</p>
-                    <p>Cependant pour les patients, âgés de 10 à 13 ans, le traitement est subit et bien souvent considéré comme une contrainte. La motivation est indispensable mais difficile à entretenir.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h2 class="h4">Problématique</h2>
-                    <p>Le secteur des outils de motivation des patients est occupé essentiellement par des propositions de ré́compenses matérielles. Certaines solutions permettent parfois à l’enfant de gagner une console de jeu à̀ la fin de son traitement.</p>
-                    <p>Mais allouer des sommes importantes pour récompenser les enfants ne semble pas adapté dans un contexte où la sécurité sociale cherche à plafonner et réduire le montant des remboursements alloués aux traitements, et crée de nombreuses injustices entre enfants qui suivent pourtant le même traitement.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <h2 class="h4">Notre solution</h2>
-                    <p>Présenté sous forme de livret connecté accompagné de stickers à gagner, Oolys permet d'améliorer l'engagement des jeunes patients dans leur traitement.</p>
-                    <p>À chaque rendez-vous, l’équipe de soin va contrôler l’état de l’appareil et tamponner le livret avec des succès. En fonction de ces succès, le personnage évolue dans l’histoire et gagne des récompenses sous forme de vignettes à coller et collectionner.</p>
-                  </div>
-                  <div class="col-md-12">
-                    <img src="{{ site.url }}/images/oolys-details.png" alt="Versions successives du livret" class="img-responsive">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#antepulsio" class="production-link" data-toggle="modal" data-target="#antepulsio">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img src="{{ site.url }}/images/antepulsio.jpg" alt="Antepulsio" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Antepulsio <abbr title="2">II</abbr></h3>
-            <p class="text-muted">Application pour apprentissage de l'anatomie et de la biomécanique pour ordinateurs, tablettes et smartphones.</p>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="antepulsio" tabindex="-1" role="dialog" aria-labelledby="Antepulsio" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
-              <h1 class="modal-title h3">Antepulsio <abbr title="2">II</abbr></h1>
-            </div>
-            <div class="modal-body">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h2 class="h4">Le projet</h2>
-                    <p>Le projet Antepulsio <abbr title="2">II</abbr> a pour objectif de développer un outil pédagogique permettant une meilleure compréhension de l'anatomie fonctionnelle. Ce jeu, destiné à l'enseignement de l'anatomie pour les étudiants des filières <abbr>Staps</abbr> et médecine, est basé sur une modélisation <abbr>3D</abbr> du corps humain intégrant une biomécanique la plus réaliste possible.</p>
-                  </div>
-                  <div class="col-md-6">
-                    <h2 class="h4">Financement</h2>
-                    <p>Le projet représente un budget d'1,8<abbr title="million d'">M</abbr>€ sur 36 mois, co-labellisé par les pôles EuroBioMed et Imaginov, recevra une <a href="http://www.eurobiomed.org/actualite/news/eurobiomed-deux-nouveaux-projets-finances-par-le-fond-unique-interministeriel/">aide de l'état et des régions d'1<abbr title="million d'">M</abbr>€</a>.</p>
-                    <p>Pour ce projet, nous travaillons en partenariat avec le <a href="http://www.univ-lyon1.fr/recherche/entites-de-recherche/laboratoire-interuniversitaire-de-biologie-de-la-motricite-libm--831814.kjsp"><abbr>LIBM</abbr> de l'université Lyon 1</a>, ainsi que les sociétés <a href="http://www.itycom.com/">Itycom</a>, brûle., et <a href="http://www.anatoscope.com/">Anatoscope</a>.</p>
-                  </div>
-                  <div class="col-md-12">
-                    <img src="{{ site.url }}/images/antepulsio-large.jpg" alt="" class="img-responsive img-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% assign modulo = forloop.index | plus: 1 | modulo: 2 %}
+      {% if modulo == 1 %}
     </div>
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h3 class="section-heading">Nous avons collaboré avec</h3>
-      </div>
+      {% endif %}
+      {% endfor %}
     </div>
     <div class="row other-productions">
+      <div class="col-xs-12 text-center">
+        <h3 class="section-heading">Nous avons collaboré avec</h3>
+      </div>
       <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
         <div class="thumbnail">
           <img src="{{ site.url }}/images/zenika.png" alt="Zenika" class="img-responsive">

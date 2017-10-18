@@ -1,54 +1,22 @@
-header {
-  text-align: center;
-  color: #fff;
-  background: #000 url("/images/working-together.jpg") no-repeat scroll top center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-  .intro-text {
-    padding-top: 10em;
-    padding-bottom: 8em;
-
-    .intro-lead-in {
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 1.5em;
-      font-style: italic;
+.layout-home {
+  .navbar-inverse:not(.navbar-shrink) {
+    @media(min-width:768px) {
+      background-color: transparent;
     }
-
-    .intro-heading {
+  }
+  .jumbotron {
+    padding-bottom: 8em;
+    margin-bottom: 0;
+  
+    @media(min-width:768px) {
+      padding-top: 18em;
+      padding-bottom: 18em;
+    }
+    
+    .jumbotron-text {
       margin: 1em 0 1.4em;
       font-size: 1.7em;
       font-weight: 700;
-    }
-  }
-
-  .tell-me-more {
-    padding: .8em;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
-
-  .container {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-
-@media(min-width:768px) {
-  header {
-    .intro-text {
-      padding-top: 18em;
-      padding-bottom: 18em;
-
-      .intro-lead-in {
-        font-size: 2.5em;
-      }
-
-      .intro-heading {
-        font-size: 2.7em;
-      }
     }
   }
 }
@@ -311,6 +279,10 @@ section#nos-partenaires {
       position: relative;
       margin: 0 auto;
       border: 1px solid #f7f7f7;
+      
+      img {
+        margin: auto;
+      }
 
       .production-hover {
         position: absolute;
@@ -379,29 +351,6 @@ div#groupama {
   p.examples {
     img.img-responsive {
       display: inline-block;
-    }
-  }
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-  li {
-    padding: 0;
-  }
-  li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    font-size: 1.5em;
-    line-height: 40px;
-    outline: 0;
-    color: #101010;
-
-    &:focus,
-    &:hover {
-      color: #fff;
-      background-color: #98ca3d;
     }
   }
 }

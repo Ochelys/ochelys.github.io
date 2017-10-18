@@ -23,6 +23,10 @@ a {
     text-decoration: none;
   }
 }
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
 
 .bg-black {
   background-color: #000;
@@ -43,6 +47,3 @@ a {
   }
 }
 
-.site-title {
-  margin: 0;
-}

@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<article>
+  <div class="jumbotron" style="background-image: url({{ site.baseurl }}/images/projects/{{ page.cover }})">
+    <div class="container">
+      <h1><img src="{{ site.baseurl }}/images/projects/{{ page.logo }}" alt="{{ page.title | strip_html | normalize_whitespace | escape }}" class="jumbotron-img img-responsive" /></h1>
+      <div class="jumbotron-well">
+        <p class="jumbotron-title">{% if page.jumbotron.title %}{{ page.jumbotron.title }}{% else %}{{ page.title }}{% endif %}</p>
+        <p class="jumbotron-text">{% if page.jumbotron.description %}{{ page.jumbotron.description }}{% else %}{{ page.title }}{% endif %}</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <h2>Notre intervention</h2>
+      {% if page.intervention %}
+      <p class="text-center">{{ page.intervention }}</p>
+      {% endif %}
+      {% for step in page.steps %}
+      <div class="media well step">
+        <div class="media-body step-text">
+          <h3 class="media-heading"><span class="step-number">{{ forloop.index }} </span>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </div>
+        {% if step.img %}
+        <div class="media-right step-illustration row">
+          {% if step.img.first %}
+            {% assign nb_img = step.img | size %}
+            {% assign fraction = 12 | divided_by:nb_img %}
+          {% endif %}
+          {% for src in step.img %}
+          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img {% if step.img.first %}px-0 col-xs-{{ fraction }}{% endif %} img-responsive" />
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="bg-black">
+    <div class="container">
+      <h2>Résultats</h2>
+      <div class="well">{{ content }}</div>
+    </div>
+  </div>
+  <div class="bg-light-gray">
+    <div class="container">
+      <ul class="nav nav-justified">
+        <li>
+          <a {% if page.previous %}href="{{ page.previous.url }}" title="Réalisation précédente: {{ page.previous.title }}"{% else %}class="disabled text-muted"{% endif %}>
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i> <span class="nav-link-text">Réalisation précédente</span>
+          </a>
+        </li>
+        <li>
+          <a href="/#nos-realisations"><i class="fa fa-th-large" aria-hidden="true"></i> <span class="nav-link-text">Toutes nos réalisations</span></a>
+        </li>
+        <li>
+          <a {% if page.next %}href="{{ page.next.url }}" title="Réalisation suivante : {{ page.next.title }}"{% else %}class="disabled text-muted"{% endif %}>
+            <span class="nav-link-text">Réalisation suivante</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</article>

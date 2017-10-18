@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <h1 class="site-title">
-        <a class="navbar-brand" href=".">
+        <a class="navbar-brand" href="/en/">
           <img src="/images/logo-ochelys.png" alt="Ochelys" />
         </a>
       </h1>
@@ -18,7 +18,11 @@
         <li><a href="#projects" class="page-scroll">Highlighted projects</a></li>
         <li><a href="#team" class="page-scroll">The team</a></li>
         <li><a href="#contact" class="page-scroll">Contact</a></li>
+        {% if page.alternate_path %}
+        <li><a href="{{ page.alternate_path }}" lang="fr">🇫🇷 Français</a></li>
+        {% else %}
         <li><a href="/" lang="fr">🇫🇷 Français</a></li>
+        {% endif %}
       </ul>
     </div>
   </div>
