@@ -1,7 +1,13 @@
 .layout-realisations {
+  .jumbotron {
+    margin-bottom: 0;
+  }
   .section-heading {
     text-align: center;
     text-transform: none;
+  }
+  .well {
+    background: #fff;
   }
   .media-left {
     width: 33%;

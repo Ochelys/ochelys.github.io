@@ -9,31 +9,32 @@ layout: default
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    {% for project in site.realisations %}
-    <div class="col-xs-12 col-md-6">
-      <div class="media well">
-        <div class="media-left">
-          <a href="{{ project.url }}">
-            <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="media-object img-responsive" />
-          </a>
-        </div>
-        <div class="media-body">
-          <h2 class="media-heading">{{ project.title }}</h2>
-          <p>{{ project.description }}</p>
-          <a href="{{ project.url }}" class="btn btn-primary" title="{{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
+<section class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      {% for project in site.realisations %}
+      <div class="col-xs-12 col-md-6">
+        <div class="media well">
+          <div class="media-left">
+            <a href="{{ project.url }}">
+              <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="media-object img-responsive" />
+            </a>
+          </div>
+          <div class="media-body">
+            <h2 class="media-heading">{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+            <a href="{{ project.url }}" class="btn btn-primary" title="{{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
+          </div>
         </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+    
+    <h2 class="section-heading">Nous avons aussi collaboré avec…</h2>
+    <ul class="list-unstyled row">
+      {% for client in site.clients %}
+      <li class="col-xs-3 col-md-2"><span class="thumbnail"><img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" /></span></li>
+      {% endfor %}
+    </ul>
   </div>
-  
-  <h2 class="section-heading">Nous avons aussi collaboré avec…</h2>
-  <ul class="list-unstyled row">
-    <li class="col-xs-3 col-md-2"><span class="thumbnail"><img src="{{ site.baseurl }}/images/clients/{{ client.img_src }}" alt="{{ client.name }}" /></span></li>
-    {% for client in site.clients %}
-    {% endfor %}
-  </ul>
-</div>
-
+</section>  
