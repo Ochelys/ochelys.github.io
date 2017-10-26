@@ -14,31 +14,29 @@ layout: default
   </div>
   
   <div class="container">
-    <div class="row">
-      <h2>Notre intervention</h2>
-      {% if page.intervention %}
-      {% endif %}
-      {% for step in page.steps %}
-      <div class="media well step">
-        <div class="media-body step-text">
-          <h3 class="media-heading"><span class="step-number">{{ forloop.index }} </span>{{ step.title }}</h3>
-          <p>{{ step.description }}</p>
-        </div>
-        {% if step.img %}
-        <div class="media-right step-illustration row">
-          {% if step.img.first %}
-            {% assign nb_img = step.img | size %}
-            {% assign fraction = 12 | divided_by:nb_img %}
-          {% endif %}
-          {% for src in step.img %}
-          <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img {% if step.img.first %}px-0 col-xs-{{ fraction }}{% endif %} img-responsive" />
-          {% endfor %}
-        </div>
-      <p class="text-center intervention-text">{{ page.intervention }}</p>
-        {% endif %}
+    <h2>Notre intervention</h2>
+    {% if page.intervention %}
+    <p class="text-center intervention-text">{{ page.intervention }}</p>
+    {% endif %}
+    {% for step in page.steps %}
+    <div class="media well step">
+      <div class="media-body step-text">
+        <h3 class="media-heading"><span class="step-number">{{ forloop.index }} </span>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
       </div>
-      {% endfor %}
+      {% if step.img %}
+      <div class="media-right step-illustration row">
+        {% if step.img.first %}
+          {% assign nb_img = step.img | size %}
+          {% assign fraction = 12 | divided_by:nb_img %}
+        {% endif %}
+        {% for src in step.img %}
+        <img src="{{ site.baseurl }}/images/projects/{{ src }}" alt="" class="step-img {% if step.img.first %}px-0 col-xs-{{ fraction }}{% endif %} img-responsive" />
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
+    {% endfor %}
   </div>
   <div class="bg-black">
     <div class="container">

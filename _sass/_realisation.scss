@@ -39,7 +39,7 @@
     border-radius: 0;
     max-width: 750px;
     padding: 30px 1rem 0 1rem;
-    margin: 0 auto 6px;
+    margin: 0 -15px 15px;
     
     &:before {
       position: absolute;
@@ -83,6 +83,7 @@
   @media(min-width:768px) {
     .step {
       padding: 30px 2rem 0 4rem;
+      margin: 0 auto 6px;
     }
     .step-illustration {
       width: 33%;
