@@ -122,6 +122,12 @@
       a {
         margin: 0 1rem; // Prevent tap areas from butting up next to each other
       }
+      &:first-child a {
+        margin-left: 0;
+      }
+      &:last-child a {
+        margin-right: 0;
+      }
     }
     .nav-link-text {
       display: none;
