@@ -1,7 +1,7 @@
 ---
 layout: realisation
 title: Le Bon Gustave
-logo: le-bon-gustave.jpg
+logo: le-bon-gustave.png
 cover: le-bon-gustave-cover.jpg
 description: Amélioration de l'expérience utilisateur et refonte d'une application mobile permettant de retrouver et commander facilement un vin que l'on apprécie.
 jumbotron:
