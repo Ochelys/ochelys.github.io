@@ -58,6 +58,7 @@ layout: default
     <div class="row main-productions">
       <div class="col-xs-12 text-center">
         <h2 class="section-heading">Quelques réalisations</h2>
+        <p>Depuis 2014, nous avons accompagné une vingtaine de startups, entreprises et associations dans la conception et le lancement de leurs services.</p>
       </div>
       {% for project in site.realisations %}
       <div class="col-xs-12 col-md-6">
@@ -70,6 +71,7 @@ layout: default
             </h2>
           </div>
           <div class="media-body">
+            <p class="h3 media-heading">{{ project.title }}</p>
             <p>{{ project.description }}</p>
             <a href="{{ project.url }}" class="btn btn-primary" title="Plus d'informations sur {{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
           </div>
@@ -84,7 +86,7 @@ layout: default
     </div>
     <div class="row other-productions">
       <div class="col-xs-12 text-center">
-        <h3 class="section-heading">Nous avons collaboré avec</h3>
+        <h3 class="section-heading">Nous avons aussi collaboré avec</h3>
       </div>
       <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
         <div class="thumbnail">

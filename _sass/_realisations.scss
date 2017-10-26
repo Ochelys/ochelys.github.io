@@ -4,6 +4,9 @@
     display: table-cell;
     vertical-align: middle;
   }
+  .media-heading {
+    text-transform: none;
+  }
   @media(max-width:767px) {
     .media {
       margin-left: -15px;
