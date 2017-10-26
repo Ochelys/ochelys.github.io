@@ -9,5 +9,9 @@ collections:
       values:
         layout: realisation
 
+# Compress CSS output
+sass:
+  style: compressed
+
 # Live reload options
 livereload: true
