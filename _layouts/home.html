@@ -84,58 +84,15 @@ layout: default
       {% endif %}
       {% endfor %}
     </div>
-    <div class="row other-productions">
-      <div class="col-xs-12 text-center">
+    <div class="other-productions">
+      <div class="text-center">
         <h3 class="section-heading">Nous avons aussi collaboré avec</h3>
       </div>
-      <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
-        <div class="thumbnail">
-          <img src="{{ site.url }}/images/zenika.png" alt="Zenika" class="img-responsive">
-          <div class="caption">
-            <h4>Zenika</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
-        <div class="thumbnail">
-          <img src="{{ site.url }}/images/pole-pixel.png" alt="Pôle Pixel" class="img-responsive">
-          <div class="caption">
-            <h4>Pôle Pixel</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
-        <div class="thumbnail">
-          <img src="{{ site.url }}/images/orthodeal.png" alt="Orthodeal" class="img-responsive">
-          <div class="caption">
-            <h4>Orthodeal</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
-        <div class="thumbnail">
-          <img src="{{ site.url }}/images/mea.png" alt="MEA" class="img-responsive">
-          <div class="caption">
-            <h4>Mission Économique de l'Ain</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
-        <div class="thumbnail">
-          <img src="{{ site.url }}/images/ktm.png" alt="KTM" class="img-responsive">
-          <div class="caption">
-            <h4 lang="en"><abbr>KTM</abbr> Advance</h4>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-lg-2 production-item">
-        <div class="thumbnail">
-          <img src="{{ site.url }}/images/clge.png" alt="CLGE" class="img-responsive">
-          <div class="caption">
-            <h4><abbr>CLGE</abbr></h4>
-          </div>
-        </div>
-      </div>
+      <ul class="list-unstyled row">
+        {% for client in site.clients %}
+        <li class="col-xs-4"><span class="thumbnail"><img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" /></span></li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>
