@@ -2,6 +2,7 @@
 name: Ochelys
 
 collections:
+  clients:
   realisations:
     output: true
     defaults:
