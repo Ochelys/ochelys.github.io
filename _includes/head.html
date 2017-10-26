@@ -5,7 +5,7 @@
 
   <link rel="icon" href="{{site.baseurl}}/favicon.ico">
 
-  <title>{{ site.name }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+  <title>{{ site.name }}{% if page.title %} - {{ page.title | strip_html | normalize_whitespace | escape }}{% endif %}</title>
   {% if page.alternate_path %}
   <link rel="alternate" href="{{site.baseurl}}{{page.alternate_path}}" hreflang="{% if page.lang == 'en' %}fr{% else %}en{% endif %}" />
   {% endif %}
