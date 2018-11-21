@@ -4,14 +4,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" href="{{site.baseurl}}/favicon.ico">
-
-  <title>{{ site.name }}{% if page.title %} - {{ page.title | strip_html | normalize_whitespace | escape }}{% endif %}</title>
+  {% capture title -%}
+    {{ site.name }} {% if page.title %}- {{ page.title | strip_html | normalize_whitespace | escape }}{% endif %}
+  {%- endcapture -%}
+  <title>{{ title }}</title>
   {% if page.alternate_path %}
   <link rel="alternate" href="{{site.baseurl}}{{page.alternate_path}}" hreflang="{% if page.lang == 'en' %}fr{% else %}en{% endif %}" />
   {% endif %}
-  {% if page.description %}
+  {%- if page.description %}
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  {% endif %}
+  {% endif -%}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:image" content="{{ site.url }}/images/ochelys.png" />
 
   <!-- Latest compiled and minified Bootstrap CSS -->
   <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.min.css">
