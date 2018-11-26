@@ -77,11 +77,6 @@ layout: default
           </div>
         </div>
       </div>
-      {% assign modulo = forloop.index | plus: 1 | modulo: 2 %}
-      {% if modulo == 1 %}
-    </div>
-    <div class="row">
-      {% endif %}
       {% endfor %}
     </div>
     <div class="other-productions">
