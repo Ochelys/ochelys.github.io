@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/climbup/
 title: ClimbUp
 logo: climb-up.png
 cover: climb-up-cover.jpg

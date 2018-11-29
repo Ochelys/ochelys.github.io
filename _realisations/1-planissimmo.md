@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/planissimmo/
 title: Planiss'Immo pour Négawatt
 logo: planissimmo.png
 cover: planissimmo-cover.png
