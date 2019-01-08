@@ -15,3 +15,10 @@ sass:
 
 # Live reload options
 livereload: true
+
+# Prevent compilation of unwanted files and folders
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - update_boostrap.sh
