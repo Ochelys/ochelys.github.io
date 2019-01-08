@@ -5,6 +5,7 @@ $(function() {
     var $target = $(target).offset();
     if ($target) {
       event.preventDefault();
+      $('.navbar-collapse.show').collapse('hide');
       $('html, body').stop().animate({
         scrollTop: $target.top
       }, 1000, 'easeInOutExpo', function() {
@@ -21,8 +22,9 @@ $(function() {
 var AnimatedHeader = (function () {
 
   var docElem = document.documentElement;
-  var header = '.navbar-fixed-top';
-  var shrink = 'navbar-shrink';
+  var header = '.fixed-top';
+  var expanded = 'bg-transparent';
+  var shrunk = 'navbar-shrink bg-dark';
   var didScroll = false;
   var changeHeaderOn = 50;
 
@@ -38,10 +40,12 @@ var AnimatedHeader = (function () {
 
   function scrollPage() {
     if (scrollY() >= changeHeaderOn) {
-      $(header).addClass(shrink);
+      $(header).addClass(shrunk);
+      $(header).removeClass(expanded);
     }
     else {
-      $(header).removeClass(shrink);
+      $(header).addClass(expanded);
+      $(header).removeClass(shrunk);
     }
     didScroll = false;
   }
