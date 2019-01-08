@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/mounki/
 title: Mounki
 logo: mounki.png
 cover: mounki-cover.jpg

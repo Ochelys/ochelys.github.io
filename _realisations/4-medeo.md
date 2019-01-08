@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/medeo/
 title: Medeo
 logo: medeo.png
 cover: medeo-cover.jpg

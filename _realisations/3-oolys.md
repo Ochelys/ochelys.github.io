@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/oolys/
 title: Oolys
 logo: oolys.png
 cover: oolys-cover.png

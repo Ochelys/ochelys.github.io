@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/hpi/
 title: <abbr>HPI</abbr>
 logo: hpi.png
 cover: hpi-cover.jpg

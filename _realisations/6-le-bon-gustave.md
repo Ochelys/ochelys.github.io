@@ -1,5 +1,6 @@
 ---
 layout: realisation
+permalink: /realisations/le-bon-gustave/
 title: Le Bon Gustave
 logo: le-bon-gustave.png
 cover: le-bon-gustave-cover.jpg
