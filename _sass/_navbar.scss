@@ -4,91 +4,95 @@
 .navbar-brand {
   height: auto;
   padding: 10px;
-  & > img {
+
+  img {
     display: inline-block;
     height: 50px;
   }
 }
 
-.navbar-inverse {
-  .navbar-nav > li {
+.navbar {
+  .nav-item {
     padding: 0 1em;
-    & > a {
+    .nav-link {
+      color: #fff;
       text-transform: uppercase;
       font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: .9em;
+      font-size: .8em;
       letter-spacing: .1em;
-    }
-
-    &:hover > a {
-      color: #98ca3d;
-    }
-
-    &.active > a,
-    &.active > a:focus,
-    &.active > a:hover {
-      background-color: #98ca3d;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
       border-radius: 3px;
-    }
-  }
+      transition: line-height .3s, font-size .3s;
 
-  .navbar-nav > li > a {
-    color: #fff;
+      &:focus,
+      &:hover {
+        color: #98ca3d;
+      }
+
+      &.active {
+        color: #000;
+        background-color: #98ca3d;
+      }
+    }
   }
 }
 
 .navbar-toggle {
   margin-top: 18px;
 }
+.navbar-collapse.collapsing,
+.navbar-collapse.show {
+  // Ensure links are readable when the nav is toggled on a small screen
+  background-color: #222 !important;
+
+  #pagelinks {
+    margin-top: 1rem;
+  }
+  .nav-item {
+    padding: 0;
+  }
+  .nav-link {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
 
 @media(min-width:768px) {
-  .navbar-toggle {
-    margin-top: 19px;
-  }
-
-  .navbar-inverse {
-    .navbar-nav > li {
-      padding: 0;
-    }
-
-    background-color: #222;
-    border: 0;
-    padding: 1.5em 0;
-  }
-
-  .navbar-nav > li > a {
-    line-height: 40px;
-    -webkit-transition: line-height .3s, font-size .3s;
-    -moz-transition: line-height .3s, font-size .3s;
-    transition: line-height .3s, font-size .3s;
-  }
-
   .navbar-brand {
     padding: 0;
-    & > img {
+
+    img {
       height: 65px;
-      -webkit-transition: height .3s;
-      -moz-transition: height .3s;
       transition: height .3s;
     }
   }
 
+  .navbar-toggle {
+    margin-top: 19px;
+  }
+
+  .navbar {
+    border: 0;
+    padding: 1.5em 0;
+
+    .nav-link {
+      line-height: 40px;
+    }
+  }
+
+  .bg-dark {
+    background-color: #222 !important;
+  }
   .navbar-shrink {
-    &.navbar-inverse {
-      background-color: #222;
-      padding: .5em;
-    }
-
-    .navbar-nav > li > a {
-      line-height: 20px;
-    }
-
+    padding: .5em;
+    
     .navbar-brand {
-      & > img {
+      img {
         height: 50px;
       }
+    }
+
+    .nav-link {
+      line-height: 20px;
     }
   }
 }
