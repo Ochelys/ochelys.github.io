@@ -4,8 +4,14 @@ footer {
   text-align: center;
 }
 
+.copyright {
+  margin-top: -.5rem; // Align with social buttons
+}
 .social-buttons {
+  display: flex;
+  justify-content: center;
   margin-bottom: 0;
+
   li {
     padding: 0;
   }
