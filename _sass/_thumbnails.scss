@@ -1,0 +1,10 @@
+.thumbnail {
+  display: block;
+  padding: $thumbnail-padding;
+  margin-bottom: $paragraph-margin-bottom;
+  line-height: 1.42857143;
+  background-color: $thumbnail-bg;
+  border: $thumbnail-border-width solid $thumbnail-border-color;
+  border-radius: $thumbnail-border-radius;
+  transition: border .2s ease-in-out;
+}

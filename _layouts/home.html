@@ -87,7 +87,11 @@ layout: default
       </div>
       <ul class="list-unstyled row">
         {% for client in site.clients %}
-        <li class="col-xs-4"><span class="thumbnail"><img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" /></span></li>
+        <li class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" />
+          </div>
+        </li>
         {% endfor %}
       </ul>
     </div>
