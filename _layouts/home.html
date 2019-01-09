@@ -60,24 +60,26 @@ layout: default
         <h2 class="section-heading">Quelques réalisations</h2>
         <p>Depuis 2014, nous avons accompagné une vingtaine de startups, entreprises et associations dans la conception et le lancement de leurs services.</p>
       </div>
-      {% for project in site.realisations %}
-      <div class="col-xs-12 offset-md-6">
-        <div class="media well">
-          <div class="media-left">
-            <h2 class="media-heading">
-              <a href="{{ project.url }}">
-                <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="media-object img-responsive" />
-              </a>
-            </h2>
-          </div>
-          <div class="media-body">
-            <p class="h3 media-heading">{{ project.title }}</p>
-            <p>{{ project.description }}</p>
-            <a href="{{ project.url }}" class="btn btn-primary" title="Plus d'informations sur {{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
+      <div class="card-deck">
+        {% for project in site.realisations %}
+        <div class="card">
+          <div class="card-body">
+            <div class="media">
+              <h3>
+                <a href="{{ project.url }}">
+                  <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="mr-3" />
+                </a>
+              </h3>
+              <div class="media-body d-flex flex-column h-100">
+                <p class="h3 card-title">{{ project.title }}</p>
+                <p>{{ project.description }}</p>
+                <a href="{{ project.url }}" class="btn btn-primary mt-auto" title="Plus d'informations sur {{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
+              </div>
+            </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
     <div class="other-productions">
       <div class="text-center">

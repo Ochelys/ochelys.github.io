@@ -1,0 +1,27 @@
+// img on top on small screens
+.card-body > .media {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+  .media-body {
+    padding-left: $spacer;
+    padding-right: $spacer;
+  }
+}
+
+// Customize card-decks
+.card-deck .card {
+  flex: none;
+  width: 95%;
+  margin-bottom: 2rem;
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 45%;
+    width: 100%;
+  }
+}
