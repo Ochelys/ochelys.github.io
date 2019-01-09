@@ -266,18 +266,12 @@ section#nos-partenaires {
     margin-bottom: .8em;
   }
 
-  .main-productions .production-item,
-  .auto-productions .production-item {
-    margin-bottom: 30px;
-    max-width: 350px;
-  }
+  .card {
 
-  .production-item {
-
-    .production-link {
+    .card-img-link {
       display: block;
       position: relative;
-      margin: 0 auto;
+      margin: 0;
       border: 1px solid #f7f7f7;
       
       img {
@@ -286,6 +280,9 @@ section#nos-partenaires {
 
       .production-hover {
         position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
         width: 100%;
         height: 100%;
         opacity: 0;

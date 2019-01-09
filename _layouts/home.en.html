@@ -55,35 +55,34 @@ layout: default.en
 
 <section id="projects" class="bg-light-gray">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Highlighted projects</h2>
-        <p>Since 2014, we have helped more than 20 startups companies and associations successfully design, build and launch their products.</p>
-      </div>
+    <div class="text-center">
+      <h2 class="section-heading">Highlighted projects</h2>
+      <p>Since 2014, we have helped more than 20 startups companies and associations successfully design, build and launch their products.</p>
     </div>
-    <div class="row main-productions">
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#tea" class="production-link" data-toggle="modal" data-target="#tea">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+
+    <div class="row main-productions card-deck">
+      <div class="card">
+        <a href="#tea" class="card-img-link" data-toggle="modal" data-target="#tea">
+          <img src="{{ site.baseurl }}/images/tea.png" alt="TEA" class="card-img-top" />
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/tea.png" alt="TEA" class="img-responsive" />
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">TEA, The Ebook Alternative</h3>
-            <p class="text-muted">User research for an e-commerce platform (Android, iOS, e-readers)</p>
           </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">TEA, The Ebook Alternative</h3>
+          <p class="text-muted">User research for an e-commerce platform (Android, iOS, e-readers)</p>
         </div>
       </div>
-      <div class="modal fade" id="tea" tabindex="-1" role="dialog" aria-labelledby="TEA, The Ebook Alternative" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+      <div class="modal fade" tabindex="-1" role="dialog" id="tea" aria-labelledby="TEA, The Ebook Alternative" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">TEA, The Ebook Alternative</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -96,45 +95,45 @@ layout: default.en
                   <div class="col-md-4">
                     <p>We organised user testing sessions in bookshops to learn how the sales funnel performed, how easy it was for customers to create their account and synchronise ebooks onto their e-reader, as well as e-reading applications.</p>
                     <p>We ran a total of 27 scenario-based tests in 2 different bookshops, studying 3 different devices (Android tablet, iPad, and e-reader).</p>
-                    <img src="{{ site.baseurl }}/images/tea-tests-utilisateurs.jpg" alt="User research" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/tea-tests-utilisateurs.jpg" alt="User research" class="img-fluid img-thumbnail" />
                   </div>
                   <div class="col-md-4">
                     <h2 class="h4">Results</h2>
-                    <p>User feedback revealed areas where the UI underperformed. We recommended several changes, and pointed out a major hurdle that prevented wide adoption.</p>
+                    <p>User feedback revealed areas where the <abbr>UI</abbr> underperformed. We recommended several changes, and pointed out a major hurdle that prevented wide adoption.</p>
                     <p>Thanks to our intervention, <abbr>TEA</abbr> redefined part of their annual roadmap and redesigned their applications to be much more user-friendly.</p>
-                    <img src="{{ site.baseurl }}/images/tea-analyse.png" alt="Analysing interview data" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/tea-analyse.png" alt="Analysing interview data" class="img-fluid img-thumbnail" />
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#groupama" class="production-link" data-toggle="modal" data-target="#groupama">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+      <div class="card">
+        <a href="#groupama" class="card-img-link" data-toggle="modal" data-target="#groupama">
+          <img src="{{ site.baseurl }}/images/groupama.png" alt="Groupama" class="card-img-top" />
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/groupama.png" alt="Groupama" class="img-responsive" />
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Groupama</h3>
-            <p class="text-muted">Interactive prototype for an internal documentation search engine</p>
           </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">Groupama</h3>
+          <p class="text-muted">Interactive prototype for an internal documentation search engine</p>
         </div>
       </div>
       <div class="modal fade" id="groupama" tabindex="-1" role="dialog" aria-labelledby="Groupama" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">Groupama</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -155,51 +154,47 @@ layout: default.en
                       <li>Mockup design</li>
                       <li>Interactive prototype in <abbr>HTML</abbr>5 and <abbr>CSS</abbr>3</li>
                     </ul>
-                    <img src="{{ site.baseurl }}/images/groupama-wireframe.png" alt="Mockup prototype" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/groupama-wireframe.png" alt="Mockup prototype" class="img-fluid img-thumbnail" />
                   </div>
                   <div class="col-md-4">
                     <h2 class="h4">Results</h2>
                     <p>The interactive prototype was used as blueprint by the development team to build a functional prototype.</p>
                     <p>Prototypes allows testing user adaptation and adoption and is a particularly useful first step to a large project. It also simplifies internal discussion and idea sharing.</p>
-                    <img src="{{ site.baseurl }}/images/groupama-prototype.png" alt="Final mockup" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/groupama-prototype.png" alt="Final mockup" class="img-fluid img-thumbnail" />
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row auto-productions">
-      <div class="col-lg-12 text-center">
-        <h3 class="section-heading">Internal productions</h3>
-      </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#oolys" class="production-link" data-toggle="modal" data-target="#oolys">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+    <h3 class="section-heading text-center">Internal productions</h3>
+    <div class="row auto-productions card-deck">
+      <div class="card">
+        <a href="#oolys" class="card-img-link" data-toggle="modal" data-target="#oolys">
+          <img src="{{ site.baseurl }}/images/oolys.jpg" alt="Oolys" class="card-img-top">
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/oolys.jpg" alt="Oolys" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Oolys</h3>
-            <p class="text-muted">Oolys is a serious game for children in orthodental care.</p>
           </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">Oolys</h3>
+          <p class="text-muted">Oolys is a serious game for children in orthodental care.</p>
         </div>
       </div>
       <div class="modal fade" id="oolys" tabindex="-1" role="dialog" aria-labelledby="Oolys" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">Oolys</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -220,39 +215,37 @@ layout: default.en
                     <p>At each appointment the orthodontic team assesses the child's braces' status, which corresponds to a number of points. The story then evolves according to the number of points gained and the child gets reward stickers to use or collect.</p>
                   </div>
                   <div class="col-md-12">
-                    <img src="{{ site.baseurl }}/images/oolys-details.png" alt="Booklet iterations" class="img-responsive">
+                    <img src="{{ site.baseurl }}/images/oolys-details.png" alt="Booklet iterations" class="img-fluid">
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok !</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#antepulsio" class="production-link" data-toggle="modal" data-target="#antepulsio">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+      <div class="card">
+        <a href="#antepulsio" class="card-img-link" data-toggle="modal" data-target="#antepulsio">
+          <img src="{{ site.baseurl }}/images/antepulsio.jpg" alt="Antepulsio" class="card-img-top">
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/antepulsio.jpg" alt="Antepulsio" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Antepulsio <abbr title="2">II</abbr></h3>
-            <p class="text-muted">Self-learning application for anatomy and biomechanics, designed for desktop computers, tablets and smartphones.</p>
+          </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">Antepulsio <abbr title="2">II</abbr></h3>
+          <p class="text-muted">Self-learning application for anatomy and biomechanics, designed for desktop computers, tablets and smartphones.</p>
           </div>
         </div>
-      </div>
       <div class="modal fade" id="antepulsio" tabindex="-1" role="dialog" aria-labelledby="Antepulsio" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">Antepulsio <abbr title="2">II</abbr></h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -266,13 +259,13 @@ layout: default.en
                     <p>The total cost of the project is an estimated €1.8<abbr title="million">M</abbr>, with development planned to cover the span of 3 years. It has been approved by EuroBioMed and Imaginov, and will <a href="http://www.eurobiomed.org/actualite/news/eurobiomed-deux-nouveaux-projets-finances-par-le-fond-unique-interministeriel/">receive €1<abbr title="million">M</abbr> states and local grants</a>. We will partner with <a href="http://www.univ-lyon1.fr/recherche/entites-de-recherche/laboratoire-interuniversitaire-de-biologie-de-la-motricite-libm--831814.kjsp">Lyon 1 university</a>, <a href="http://www.itycom.com/">Itycom</a>, brûle., and <a href="http://www.anatoscope.com/">Anatoscope</a>.</p>
                   </div>
                   <div class="col-md-12">
-                    <img src="{{ site.baseurl }}/images/antepulsio-large.jpg" alt="" class="img-responsive img-center">
+                    <img src="{{ site.baseurl }}/images/antepulsio-large.jpg" alt="" class="img-fluid img-center">
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok !</button>
             </div>
           </div>
         </div>
