@@ -23,8 +23,7 @@ var AnimatedHeader = (function () {
 
   var docElem = document.documentElement;
   var header = '.fixed-top';
-  var expanded = 'bg-transparent';
-  var shrunk = 'navbar-shrink bg-dark';
+  var shrunk = 'navbar-shrink';
   var didScroll = false;
   var changeHeaderOn = 50;
 
@@ -41,10 +40,8 @@ var AnimatedHeader = (function () {
   function scrollPage() {
     if (scrollY() >= changeHeaderOn) {
       $(header).addClass(shrunk);
-      $(header).removeClass(expanded);
     }
     else {
-      $(header).addClass(expanded);
       $(header).removeClass(shrunk);
     }
     didScroll = false;

@@ -12,26 +12,23 @@
 }
 
 .navbar {
-  .nav-item {
-    padding: 0 1em;
-    .nav-link {
-      color: #fff;
-      text-transform: uppercase;
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: .8em;
-      letter-spacing: .1em;
-      border-radius: 3px;
-      transition: line-height .3s, font-size .3s;
+  .nav-item .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: .8em;
+    letter-spacing: .1em;
+    border-radius: 3px;
+    transition: line-height .3s, font-size .3s;
 
-      &:focus,
-      &:hover {
-        color: #98ca3d;
-      }
+    &:focus,
+    &:hover {
+      color: #98ca3d;
+    }
 
-      &.active {
-        color: #000;
-        background-color: #98ca3d;
-      }
+    &.active {
+      color: #000;
+      background-color: #98ca3d;
     }
   }
 }
@@ -39,20 +36,19 @@
 .navbar-toggle {
   margin-top: 18px;
 }
-.navbar-collapse.collapsing,
-.navbar-collapse.show {
-  // Ensure links are readable when the nav is toggled on a small screen
-  background-color: #222 !important;
-
-  #pagelinks {
-    margin-top: 1rem;
-  }
-  .nav-item {
-    padding: 0;
-  }
-  .nav-link {
-    padding-left: .5rem;
-    padding-right: .5rem;
+@media(max-width:767px) {
+  .navbar-collapse.collapsing,
+  .navbar-collapse.show {
+    // Ensure links are readable when the nav is toggled on a small screen
+    background-color: #222 !important;
+  
+    #pagelinks {
+      margin-top: 1rem;
+    }
+    .nav-link {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
   }
 }
 
