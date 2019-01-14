@@ -77,6 +77,16 @@
   .nav-link-text {
     font-size: 120%;
   }
+  .step-illustration {
+    display: flex;
+    flex-direction: row;
+    img {
+      flex: auto;
+    }
+  }
+  .step-illustration img:only-child {
+    width: 100%;
+  }
   @media(min-width:768px) {
     .step {
       padding: 30px 2rem 0 4rem;
@@ -100,11 +110,16 @@
       width: 33%;
       margin-left: auto;
     }
-    .step-illustration img {
-      width: 100%;
-    }
   }
   @media(max-width:767px) {
+    .jumbotron {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .jumbotron-well {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
     .step-heading {
       padding-left: .5rem;
       border-left: 2.5rem solid #fff;
