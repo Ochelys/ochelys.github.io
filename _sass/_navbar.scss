@@ -10,6 +10,9 @@
     height: 50px;
   }
 }
+.bg-dark {
+  background-color: #343a40 !important;
+}
 
 .navbar {
   .nav-item .nav-link {
@@ -39,8 +42,6 @@
 @media(max-width:767px) {
   .navbar-collapse.collapsing,
   .navbar-collapse.show {
-    // Ensure links are readable when the nav is toggled on a small screen
-    background-color: #222 !important;
   
     #pagelinks {
       margin-top: 1rem;
@@ -75,9 +76,6 @@
     }
   }
 
-  .bg-dark {
-    background-color: #222 !important;
-  }
   .navbar-shrink {
     padding: .5em;
     

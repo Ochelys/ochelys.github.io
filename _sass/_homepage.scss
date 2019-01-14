@@ -3,6 +3,15 @@
     @media(min-width:768px) {
       background-color: transparent !important;
     }
+  }  
+  @media(max-width:991px) {
+    .navbar-collapse.collapsing,
+    .navbar-collapse.show {
+      // Ensure links are readable when the nav is toggled on a small screen
+      background-color: #343a40 !important;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
   .jumbotron {
     padding-bottom: 8em;
