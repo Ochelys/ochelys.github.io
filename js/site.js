@@ -19,7 +19,7 @@ $(function() {
 });
 
 // animated-header
-var AnimatedHeader = (function () {
+(function () {
 
   var docElem = document.documentElement;
   var header = '.fixed-top';
