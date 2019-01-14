@@ -7,7 +7,7 @@ cover: mounki-cover.jpg
 description: Conception d'un service de suivi pour l'apprentissage du permis de conduire sous forme d'application tablette et mobile pour moniteurs et élèves.
 
 jumbotron:
-  title: Mounki conçoit une solution permettant aux moniteurs d'auto-école de faciliter leur utilisation du livret de conduit et de maintenir la motivation des élèves.
+  title: Mounki conçoit une solution permettant aux moniteurs d'auto-école de faciliter leur utilisation du livret de conduite et de maintenir la motivation des élèves.
   description: Nous avons accompagné l’équipe Mounki pour l’étude des besoins auprès d’utilisateurs, le maquettage, la conduite de tests, et des recommandations de solutions techniques, des premières idées jusqu’au lancement des développements.
 
 intervention: Prototypage, tests auprès d'utilisateurs, recommandations techniques.
