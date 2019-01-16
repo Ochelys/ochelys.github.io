@@ -14,30 +14,30 @@ layout: default
 </div>
 
 <section id="nos-methodes">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-12 col-md-8 offset-md-2 text-center">
         <h2 class="section-heading">Nos méthodes</h2>
-        <p class="section-subheading text-muted col-sm-8 col-sm-offset-2">Une approche centrée utilisateur et itérative permet d’améliorer un projet en continu en gardant une bonne maitrise des coûts.</p>
+        <p class="section-subheading text-muted">Une approche centrée utilisateur et itérative permet d’améliorer un projet en continu en gardant une bonne maitrise des coûts.</p>
       </div>
     </div>
     <div id="iteration" class="row text-center">
-      <div class="methode apprendre">
+      <div class="col-12 methode apprendre">
         <div>
           <h3 class="methodes-heading">1. Apprendre et concevoir</h3>
           <p>La conception est collaborative et se base sur une démarche scientifique et des apprentissages issus des retours utilisateurs.</p>
         </div>
       </div>
-      <div class="resultat backlog">
+      <div class="resultat backlog btn btn-block">
         Cahier des fonctionnalités
       </div>
-      <div class="methode produire">
+      <div class="col-12 methode produire">
         <div>
           <h3 class="methodes-heading">2. Produire</h3>
           <p>Le développement est agile pour pouvoir s'ajuster en permanence sur ce qui est le plus pertinent pour le projet.</p>
         </div>
       </div>
-      <div class="resultat prototype">
+      <div class="resultat prototype btn btn-block">
         Prototype ou produit
       </div>
       <div class="methode mesurer">
@@ -46,7 +46,7 @@ layout: default
           <p>La recherche utilisateur est intégrée aux cycles de conception pour concevoir une solution adoptée par les utilisateurs.</p>
         </div>
       </div>
-      <div class="resultat donnees">
+      <div class="resultat donnees btn btn-block">
         Données utilisateur
       </div>
     </div>
@@ -56,28 +56,30 @@ layout: default
 <section id="nos-realisations" class="bg-light-gray layout-realisations">
   <div class="container">
     <div class="row main-productions">
-      <div class="col-xs-12 text-center">
+      <div class="col-12 text-center">
         <h2 class="section-heading">Quelques réalisations</h2>
         <p>Depuis 2014, nous avons accompagné une vingtaine de startups, entreprises et associations dans la conception et le lancement de leurs services.</p>
       </div>
-      {% for project in site.realisations %}
-      <div class="col-xs-12 col-md-6">
-        <div class="media well">
-          <div class="media-left">
-            <h2 class="media-heading">
-              <a href="{{ project.url }}">
-                <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="media-object img-responsive" />
-              </a>
-            </h2>
-          </div>
-          <div class="media-body">
-            <p class="h3 media-heading">{{ project.title }}</p>
-            <p>{{ project.description }}</p>
-            <a href="{{ project.url }}" class="btn btn-primary" title="Plus d'informations sur {{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
+      <div class="card-deck">
+        {% for project in site.realisations %}
+        <div class="card">
+          <div class="card-body">
+            <div class="media">
+              <h3>
+                <a href="{{ project.url }}">
+                  <img src="{{ site.baseurl }}/images/projects/{{ project.logo }}" alt="{{ project.title | strip_html | normalize_whitespace | escape }}" class="mr-3" />
+                </a>
+              </h3>
+              <div class="media-body d-flex flex-column h-100">
+                <p class="h3 card-title">{{ project.title }}</p>
+                <p>{{ project.description }}</p>
+                <a href="{{ project.url }}" class="btn btn-primary mt-auto" title="Plus d'informations sur {{ project.title | strip_html | normalize_whitespace | escape }}">Plus d'infos</a>
+              </div>
+            </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
     <div class="other-productions">
       <div class="text-center">
@@ -85,7 +87,11 @@ layout: default
       </div>
       <ul class="list-unstyled row">
         {% for client in site.clients %}
-        <li class="col-xs-4"><span class="thumbnail"><img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" /></span></li>
+        <li class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" />
+          </div>
+        </li>
         {% endfor %}
       </ul>
     </div>
@@ -94,14 +100,10 @@ layout: default
 
 <section id="notre-equipe">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Notre incroyable équipe</h2>
-      </div>
-    </div>
+    <h2 class="section-heading text-center">Notre incroyable équipe</h2>
     <div class="row text-center">
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/florent.png" alt="Florent Goumy" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/florent.png" alt="Florent Goumy" class="img-fluid rounded-circle">
         <h3 class="h4">Florent Goumy</h3>
         <p class="bio">Je conçois des services Web depuis 10 ans. J'aime comprendre, étudier et optimiser l'expérience des utilisateurs. Je dévore de nombreux livres sur le Lean Startup, l'UX, le design émotionnel… avec un petit fond musical.</p>
         <ul class="list-inline social-buttons">
@@ -111,7 +113,7 @@ layout: default
         </ul>
       </div>
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/julien.png" alt="Julien Fusco" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/julien.png" alt="Julien Fusco" class="img-fluid rounded-circle">
         <h3 class="h4">Julien Fusco</h3>
         <p class="bio">J'ai fait mes armes en tant que développeur Web durant près de 10 ans en SSII, startups… J'explore les dernières technos en buvant mon café. Je fais partie des agilistes convaincus. J'aime pousser des trucs sur Github et y explorer des projets open source.</p>
         <ul class="list-inline social-buttons">
@@ -122,7 +124,7 @@ layout: default
         </ul>
       </div>
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/quentin.jpg" alt="Quentin Basset" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/quentin.jpg" alt="Quentin Basset" class="img-fluid rounded-circle">
         <h3 class="h4">Quentin Basset</h3>
         <p class="bio">Issu de la génération du Web et des nouvelles technologies, je suis un passionné de ces domaines. À Ochelys, je gère les serveurs, je développe les projets, et forme les utilisateurs.</p>
         <ul class="list-inline social-buttons">
@@ -131,15 +133,15 @@ layout: default
         </ul>
       </div>
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/jeremy.jpg" alt="Jérémy Styczen" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/jeremy.jpg" alt="Jérémy Styczen" class="img-fluid rounded-circle">
         <h3 class="h4">Jérémy Styczen</h3>
         <p class="bio">Développeur Front-End et designer, je crée des applications web personnalisées en me concentrant sur la conception de l’interface et l’animation. J'explore les technologies <abbr>SVG</abbr>, <abbr>CSS</abbr>, et les langages Back-End pour pouvoir intervenir de manière polyvalente. J'adore voyager et jouer de la musique.</p>
         <ul class="list-inline social-buttons">
           <li><a href="https://www.linkedin.com/in/jeremystyczen/" title="Jérémy sur LinkedIn"><i class="fa fa-linkedin"></i><span class="sr-only">Jérémy sur LinkedIn</span></a></li>
         </ul>
       </div>
-      <div class="col-sm-6 col-sm-offset-3 team-member">
-        <img src="{{ site.url }}/images/giraffe.jpg" alt="Giraffe" class="img-responsive img-circle">
+      <div class="col-sm-6 col-sm-3 offset-sm-3 team-member">
+        <img src="{{ site.url }}/images/giraffe.jpg" alt="Giraffe" class="img-fluid rounded-circle">
         <h3 class="h4">Et vous&nbsp;?</h3>
         <p class="bio">Vous aimez le code expressif et la qualité logicielle, livrer des fonctionnalités priorisées, découvrir de nouvelles <span lang="en">stacks</span> techniques&nbsp;? C'est notre quotidien.
           Vous cherchez un environnement agréable et une équipe compétente&nbsp;? Nous sommes ouverts et accueillants, nous pratiquons les méthodes agiles et privilégions le dialogue et la transparence. Rejoignez-nous&nbsp;!</p>
@@ -166,7 +168,7 @@ layout: default
           2 Rue Professeur Zimmermann<br>
           69007 Lyon<br>
         </address>
-        <a class="btn btn-default" href="https://goo.gl/maps/AMbCAnD86RN2">Voir sur <i class="fa fa-map-marker"></i> <span lang="en">Google Maps</span></a>
+        <a class="btn btn-secondary" href="https://goo.gl/maps/AMbCAnD86RN2">Voir sur <i class="fa fa-map-marker"></i> <span lang="en">Google Maps</span></a>
       </div>
     </div>
   </div>
@@ -174,32 +176,28 @@ layout: default
 
 <section id="nos-partenaires" class="bg-black">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Nos partenaires</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 col-sm-2 col-sm-offset-2">
+    <h2 class="section-heading text-center">Nos partenaires</h2>
+    <ul class="list-unstyled row justify-content-around">
+      <li class="col-6 col-sm-3">
         <a href="http://lyon.clubagilerhonealpes.org/" class="thumbnail">
-          <img src="{{ site.baseurl }}/images/partenaires/cara-lyon.png" alt="Club Agile Rhône-Alpes">
+          <img src="{{ site.baseurl }}/images/partenaires/cara-lyon.png" alt="Club Agile Rhône-Alpes" class="img-fluid">
         </a>
-      </div>
-      <div class="col-xs-6 col-sm-2">
+      </li>
+      <li class="col-6 col-sm-3">
         <a href="http://www.collectif-designersplus.fr/" class="thumbnail">
-          <img src="{{ site.baseurl }}/images/partenaires/designers-plus.png" alt="Collectif Designers+" class="img-responsive">
+          <img src="{{ site.baseurl }}/images/partenaires/designers-plus.png" alt="Collectif Designers+" class="img-fluid">
         </a>
-      </div>
-      <div class="col-xs-6 col-sm-2">
+      </li>
+      <li class="col-6 col-sm-3">
         <a href="http://www.imaginove.fr/" class="thumbnail">
-          <img src="{{ site.baseurl }}/images/partenaires/imaginove.png" alt="Imaginove" class="img-responsive">
+          <img src="{{ site.baseurl }}/images/partenaires/imaginove.png" alt="Imaginove" class="img-fluid">
         </a>
-      </div>
-      <div class="col-xs-6 col-sm-2">
+      </li>
+      <li class="col-6 col-sm-3">
         <a href="http://i-carecluster.org/" class="thumbnail" lang="en">
-          <img src="{{ site.baseurl }}/images/partenaires/cluster-icare.png" alt="Cluster ICare" class="img-responsive">
+          <img src="{{ site.baseurl }}/images/partenaires/cluster-icare.png" alt="Cluster ICare" class="img-fluid">
         </a>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>

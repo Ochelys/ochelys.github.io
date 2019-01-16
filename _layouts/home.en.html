@@ -14,39 +14,39 @@ layout: default.en
 </div>
 
 <section id="methodology">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
+      <div class="col-12 col-md-8 offset-md-2 text-center">
         <h2 class="section-heading">Methodology</h2>
-        <p class="section-subheading text-muted col-sm-8 col-sm-offset-2">Iterating using a user-centered approach helps improving project quality over time while keeping costs down.</p>
+        <p class="section-subheading text-muted">Iterating using a user-centered approach helps improving project quality over time while keeping costs down.</p>
       </div>
     </div>
     <div id="iteration" class="row text-center">
-      <div class="methode apprendre">
+      <div class="col-12 methode apprendre">
         <div>
           <h3 class="methodes-heading">1. Explore and design</h3>
           <p>We design as a team, analysing user research findings using scientific methodology.</p>
         </div>
       </div>
-      <div class="resultat backlog">
+      <div class="resultat backlog btn btn-block">
         Product backlog
       </div>
-      <div class="methode produire">
+      <div class="col-12 methode produire">
         <div>
           <h3 class="methodes-heading">2. Build</h3>
           <p>Agile development is always focused on features that bring the most value to the project.</p>
         </div>
       </div>
-      <div class="resultat prototype">
+      <div class="resultat prototype btn btn-block">
         Prototype or product
       </div>
-      <div class="methode mesurer">
+      <div class="col-12 methode mesurer">
         <div>
           <h3 class="methodes-heading">3. Measure</h3>
           <p>User research is combined with the design process to build a solution that users are eager to adopt.</p>
         </div>
       </div>
-      <div class="resultat donnees">
+      <div class="resultat donnees btn btn-block">
         User data
       </div>
     </div>
@@ -55,35 +55,34 @@ layout: default.en
 
 <section id="projects" class="bg-light-gray">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Highlighted projects</h2>
-        <p>Since 2014, we have helped more than 20 startups companies and associations successfully design, build and launch their products.</p>
-      </div>
+    <div class="text-center">
+      <h2 class="section-heading">Highlighted projects</h2>
+      <p>Since 2014, we have helped more than 20 startups companies and associations successfully design, build and launch their products.</p>
     </div>
-    <div class="row main-productions">
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#tea" class="production-link" data-toggle="modal" data-target="#tea">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+
+    <div class="row main-productions card-deck">
+      <div class="card">
+        <a href="#tea" class="card-img-link" data-toggle="modal" data-target="#tea">
+          <img src="{{ site.baseurl }}/images/tea.png" alt="TEA" class="card-img-top" />
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/tea.png" alt="TEA" class="img-responsive" />
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">TEA, The Ebook Alternative</h3>
-            <p class="text-muted">User research for an e-commerce platform (Android, iOS, e-readers)</p>
           </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">TEA, The Ebook Alternative</h3>
+          <p class="text-muted">User research for an e-commerce platform (Android, iOS, e-readers)</p>
         </div>
       </div>
-      <div class="modal fade" id="tea" tabindex="-1" role="dialog" aria-labelledby="TEA, The Ebook Alternative" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+      <div class="modal fade" tabindex="-1" role="dialog" id="tea" aria-labelledby="TEA, The Ebook Alternative" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">TEA, The Ebook Alternative</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -96,45 +95,45 @@ layout: default.en
                   <div class="col-md-4">
                     <p>We organised user testing sessions in bookshops to learn how the sales funnel performed, how easy it was for customers to create their account and synchronise ebooks onto their e-reader, as well as e-reading applications.</p>
                     <p>We ran a total of 27 scenario-based tests in 2 different bookshops, studying 3 different devices (Android tablet, iPad, and e-reader).</p>
-                    <img src="{{ site.baseurl }}/images/tea-tests-utilisateurs.jpg" alt="User research" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/tea-tests-utilisateurs.jpg" alt="User research" class="img-fluid img-thumbnail" />
                   </div>
                   <div class="col-md-4">
                     <h2 class="h4">Results</h2>
-                    <p>User feedback revealed areas where the UI underperformed. We recommended several changes, and pointed out a major hurdle that prevented wide adoption.</p>
+                    <p>User feedback revealed areas where the <abbr>UI</abbr> underperformed. We recommended several changes, and pointed out a major hurdle that prevented wide adoption.</p>
                     <p>Thanks to our intervention, <abbr>TEA</abbr> redefined part of their annual roadmap and redesigned their applications to be much more user-friendly.</p>
-                    <img src="{{ site.baseurl }}/images/tea-analyse.png" alt="Analysing interview data" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/tea-analyse.png" alt="Analysing interview data" class="img-fluid img-thumbnail" />
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#groupama" class="production-link" data-toggle="modal" data-target="#groupama">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+      <div class="card">
+        <a href="#groupama" class="card-img-link" data-toggle="modal" data-target="#groupama">
+          <img src="{{ site.baseurl }}/images/groupama.png" alt="Groupama" class="card-img-top" />
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/groupama.png" alt="Groupama" class="img-responsive" />
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Groupama</h3>
-            <p class="text-muted">Interactive prototype for an internal documentation search engine</p>
           </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">Groupama</h3>
+          <p class="text-muted">Interactive prototype for an internal documentation search engine</p>
         </div>
       </div>
       <div class="modal fade" id="groupama" tabindex="-1" role="dialog" aria-labelledby="Groupama" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">Groupama</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -155,51 +154,47 @@ layout: default.en
                       <li>Mockup design</li>
                       <li>Interactive prototype in <abbr>HTML</abbr>5 and <abbr>CSS</abbr>3</li>
                     </ul>
-                    <img src="{{ site.baseurl }}/images/groupama-wireframe.png" alt="Mockup prototype" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/groupama-wireframe.png" alt="Mockup prototype" class="img-fluid img-thumbnail" />
                   </div>
                   <div class="col-md-4">
                     <h2 class="h4">Results</h2>
                     <p>The interactive prototype was used as blueprint by the development team to build a functional prototype.</p>
                     <p>Prototypes allows testing user adaptation and adoption and is a particularly useful first step to a large project. It also simplifies internal discussion and idea sharing.</p>
-                    <img src="{{ site.baseurl }}/images/groupama-prototype.png" alt="Final mockup" class="img-responsive" />
+                    <img src="{{ site.baseurl }}/images/groupama-prototype.png" alt="Final mockup" class="img-fluid img-thumbnail" />
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row auto-productions">
-      <div class="col-lg-12 text-center">
-        <h3 class="section-heading">Internal productions</h3>
-      </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#oolys" class="production-link" data-toggle="modal" data-target="#oolys">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+    <h3 class="section-heading text-center">Internal productions</h3>
+    <div class="row auto-productions card-deck">
+      <div class="card">
+        <a href="#oolys" class="card-img-link" data-toggle="modal" data-target="#oolys">
+          <img src="{{ site.baseurl }}/images/oolys.jpg" alt="Oolys" class="card-img-top">
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/oolys.jpg" alt="Oolys" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Oolys</h3>
-            <p class="text-muted">Oolys is a serious game for children in orthodental care.</p>
           </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">Oolys</h3>
+          <p class="text-muted">Oolys is a serious game for children in orthodental care.</p>
         </div>
       </div>
       <div class="modal fade" id="oolys" tabindex="-1" role="dialog" aria-labelledby="Oolys" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">Oolys</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -220,39 +215,37 @@ layout: default.en
                     <p>At each appointment the orthodontic team assesses the child's braces' status, which corresponds to a number of points. The story then evolves according to the number of points gained and the child gets reward stickers to use or collect.</p>
                   </div>
                   <div class="col-md-12">
-                    <img src="{{ site.baseurl }}/images/oolys-details.png" alt="Booklet iterations" class="img-responsive">
+                    <img src="{{ site.baseurl }}/images/oolys-details.png" alt="Booklet iterations" class="img-fluid">
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok !</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="production-item center-block">
-          <a href="#antepulsio" class="production-link" data-toggle="modal" data-target="#antepulsio">
-            <div class="production-hover">
-              <div class="production-hover-content">
-                <i class="fa fa-plus fa-3x"></i>
-              </div>
+      <div class="card">
+        <a href="#antepulsio" class="card-img-link" data-toggle="modal" data-target="#antepulsio">
+          <img src="{{ site.baseurl }}/images/antepulsio.jpg" alt="Antepulsio" class="card-img-top">
+          <div class="production-hover">
+            <div class="production-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
             </div>
-            <img src="{{ site.baseurl }}/images/antepulsio.jpg" alt="Antepulsio" class="img-responsive">
-          </a>
-          <div class="production-caption">
-            <h3 class="h4">Antepulsio <abbr title="2">II</abbr></h3>
-            <p class="text-muted">Self-learning application for anatomy and biomechanics, designed for desktop computers, tablets and smartphones.</p>
+          </div>
+        </a>
+        <div class="card-body">
+          <h3 class="h4">Antepulsio <abbr title="2">II</abbr></h3>
+          <p class="text-muted">Self-learning application for anatomy and biomechanics, designed for desktop computers, tablets and smartphones.</p>
           </div>
         </div>
-      </div>
       <div class="modal fade" id="antepulsio" tabindex="-1" role="dialog" aria-labelledby="Antepulsio" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">&times;</span></button>
               <h1 class="modal-title h3">Antepulsio <abbr title="2">II</abbr></h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
               <div class="container-fluid">
@@ -266,13 +259,13 @@ layout: default.en
                     <p>The total cost of the project is an estimated €1.8<abbr title="million">M</abbr>, with development planned to cover the span of 3 years. It has been approved by EuroBioMed and Imaginov, and will <a href="http://www.eurobiomed.org/actualite/news/eurobiomed-deux-nouveaux-projets-finances-par-le-fond-unique-interministeriel/">receive €1<abbr title="million">M</abbr> states and local grants</a>. We will partner with <a href="http://www.univ-lyon1.fr/recherche/entites-de-recherche/laboratoire-interuniversitaire-de-biologie-de-la-motricite-libm--831814.kjsp">Lyon 1 university</a>, <a href="http://www.itycom.com/">Itycom</a>, brûle., and <a href="http://www.anatoscope.com/">Anatoscope</a>.</p>
                   </div>
                   <div class="col-md-12">
-                    <img src="{{ site.baseurl }}/images/antepulsio-large.jpg" alt="" class="img-responsive img-center">
+                    <img src="{{ site.baseurl }}/images/antepulsio-large.jpg" alt="" class="img-fluid img-center">
                   </div>
                 </div>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Ok !</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok !</button>
             </div>
           </div>
         </div>
@@ -284,7 +277,11 @@ layout: default.en
       </div>
       <ul class="list-unstyled row">
         {% for client in site.clients %}
-        <li class="col-xs-4"><span class="thumbnail"><img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" /></span></li>
+        <li class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="{{ site.baseurl }}/images/clients/{{ client.logo }}" alt="{{ client.title | strip_html | normalize_whitespace | escape }}" />
+          </div>
+        </li>
         {% endfor %}
       </ul>
     </div>
@@ -293,14 +290,10 @@ layout: default.en
 
 <section id="team">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Our awesome team</h2>
-      </div>
-    </div>
+    <h2 class="section-heading text-center">Our awesome team</h2>
     <div class="row text-center">
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/florent.png" alt="Florent Goumy" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/florent.png" alt="Florent Goumy" class="img-fluid rounded-circle">
         <h3 class="h4" lang="fr">Florent Goumy</h3>
         <p class="bio">I have 10 years experience designing Web services. I love studying, understanding and optimising user experience. I read a lot about Lean Startup, <abbr>UX</abbr>, emotional design, interface/interaction design, and many many more.</p>
         <ul class="list-inline social-buttons">
@@ -310,7 +303,7 @@ layout: default.en
         </ul>
       </div>
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/julien.png" alt="Julien Fusco" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/julien.png" alt="Julien Fusco" class="img-fluid rounded-circle">
         <h3 class="h4" lang="fr">Julien Fusco</h3>
         <p class="bio">I honed my web development skills for more than 10 years working for <abbr>IT</abbr> services companies as well as startups. I keep up-to-date about new technologies every day. I believe in agile values and principles and love contributing to Open Source projects.</p>
         <ul class="list-inline social-buttons">
@@ -321,7 +314,7 @@ layout: default.en
         </ul>
       </div>
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/quentin.jpg" alt="Quentin Basset" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/quentin.jpg" alt="Quentin Basset" class="img-fluid rounded-circle">
         <h3 class="h4">Quentin Basset</h3>
         <p class="bio">Born at the dawn of personal computers and Internet, I love coding and technology. At Ochelys I manage servers, write both back-end and front-end code, and help customers get up to speed with the new interfaces and workflows.</p>
         <ul class="list-inline social-buttons">
@@ -330,10 +323,9 @@ layout: default.en
         </ul>
       </div>
       <div class="col-sm-6 team-member">
-        <img src="{{ site.baseurl }}/images/jeremy.jpg" alt="Jérémy Styczen" class="img-responsive img-circle">
+        <img src="{{ site.baseurl }}/images/jeremy.jpg" alt="Jérémy Styczen" class="img-fluid rounded-circle">
         <h3 class="h4">Jérémy Styczen</h3>
         <p class="bio">As both Front-End developper and designer I create customised web applications with a particular focus on interface and animations. I love to learn <abbr>SVG</abbr> and <abbr>CSS</abbr> tricks, and new Back-End languages to work on innovative projects. I love travelling. I play bass in a band.</p>
-        <p class="bio"></p>
         <ul class="list-inline social-buttons">
           <li><a href="https://www.linkedin.com/in/jeremystyczen/" title="Jérémy sur LinkedIn"><i class="fa fa-linkedin"></i><span class="sr-only">Jérémy sur LinkedIn</span></a></li>
         </ul>
@@ -359,7 +351,7 @@ layout: default.en
           2 Rue Professeur Zimmermann<br>
           69007 Lyon, France<br>
         </address>
-        <a class="btn btn-default" href="https://goo.gl/maps/AMbCAnD86RN2">Locate us on <i class="fa fa-map-marker"></i> Google Maps</a>
+        <a class="btn btn-secondary" href="https://goo.gl/maps/AMbCAnD86RN2">Locate us on <i class="fa fa-map-marker"></i> Google Maps</a>
       </div>
     </div>
   </div>
@@ -367,32 +359,28 @@ layout: default.en
 
 <section id="nos-partenaires" class="bg-black">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Our partners</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 col-sm-2 col-sm-offset-2">
+    <h2 class="section-heading text-center">Our partners</h2>
+    <ul class="list-unstyled row justify-content-around">
+      <li class="col-6 col-sm-3">
         <a href="http://lyon.clubagilerhonealpes.org/" class="thumbnail">
-          <img src="{{ site.baseurl }}/images/partenaires/cara-lyon.png" alt="Club Agile Rhône-Alpes">
+          <img src="{{ site.baseurl }}/images/partenaires/cara-lyon.png" alt="Club Agile Rhône-Alpes" lang="fr" class="img-fluid">
         </a>
-      </div>
-      <div class="col-xs-6 col-sm-2">
+      </li>
+      <li class="col-6 col-sm-3">
         <a href="http://www.collectif-designersplus.fr/" class="thumbnail">
-          <img src="{{ site.baseurl }}/images/partenaires/designers-plus.png" alt="Collectif Designers+" class="img-responsive" />
+          <img src="{{ site.baseurl }}/images/partenaires/designers-plus.png" alt="Collectif Designers+" lang="fr" class="img-fluid">
         </a>
-      </div>
-      <div class="col-xs-6 col-sm-2">
+      </li>
+      <li class="col-6 col-sm-3">
         <a href="http://www.imaginove.fr/" class="thumbnail">
-          <img src="{{ site.baseurl }}/images/partenaires/imaginove.png" alt="Imaginove" class="img-responsive" />
+          <img src="{{ site.baseurl }}/images/partenaires/imaginove.png" alt="Imaginove" class="img-fluid">
         </a>
-      </div>
-      <div class="col-xs-6 col-sm-2">
+      </li>
+      <li class="col-6 col-sm-3">
         <a href="http://i-carecluster.org/" class="thumbnail" lang="en">
-          <img src="{{ site.baseurl }}/images/partenaires/cluster-icare.png" alt="Cluster ICare" class="img-responsive" />
+          <img src="{{ site.baseurl }}/images/partenaires/cluster-icare.png" alt="Cluster ICare" class="img-fluid">
         </a>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>

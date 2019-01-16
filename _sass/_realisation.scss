@@ -27,7 +27,7 @@
     color: #9b9b9b;
     margin-bottom: 3rem;
   }
-  .media-heading {
+  .step-heading {
     font-weight: 400;
     text-transform: none;
     margin-bottom: 10px;
@@ -40,6 +40,7 @@
     max-width: 750px;
     padding: 30px 1rem 0 1rem;
     margin: 0 -15px 15px;
+    background: #f5f5f5;
     
     &:before {
       position: absolute;
@@ -54,16 +55,12 @@
       margin-left: -30px;
     }
   }
-  .step-img {
-    height: auto;
-    margin: auto;
-  }
   .bg-black {
     color: #fff;
     margin-top: 2rem;
     padding: 4rem 0 6rem;
     
-    .well {
+    .card {
       color: #444;
       font-size: 120%;
       margin: auto;
@@ -80,16 +77,20 @@
   .nav-link-text {
     font-size: 120%;
   }
+  .step-illustration {
+    display: flex;
+    flex-direction: row;
+    img {
+      flex: auto;
+    }
+  }
+  .step-illustration img:only-child {
+    width: 100%;
+  }
   @media(min-width:768px) {
     .step {
       padding: 30px 2rem 0 4rem;
       margin: 0 auto 6px;
-    }
-    .step-illustration {
-      width: 33%;
-      display: table-cell;
-      height: 180px;
-      padding-bottom: 20px;
     }
     .step-number {
       position: absolute;
@@ -99,9 +100,27 @@
       color: #fff;
       background: #98ca3d;
     }
+    .step-text {
+      width: 65%;
+    }
+    .step-text:only-child {
+      width: 100%;
+    }
+    .step-illustration {
+      width: 33%;
+      margin-left: auto;
+    }
   }
   @media(max-width:767px) {
-    .media-heading {
+    .jumbotron {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .jumbotron-well {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+    .step-heading {
       padding-left: .5rem;
       border-left: 2.5rem solid #fff;
     }
@@ -112,15 +131,10 @@
       margin-left: -3rem;
       color: #98ca3d;
     }
-    .step-text,
-    .step-illustration {
-      display: block;
-      width: auto;
-    }
-    // Make illustration span entire viewport
-    .step-illustration {
-      margin-left: -2rem;
-      margin-right: -1rem;
+    // Make illustration span entire viewport on mobile
+    .step-illustration,
+    .step-illustration img {
+      width: 100%;
     }
     .nav-justified > li {
       display: table-cell;
