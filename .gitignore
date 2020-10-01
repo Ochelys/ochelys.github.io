@@ -4,3 +4,4 @@ package-lock.json
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+.DS_Store
