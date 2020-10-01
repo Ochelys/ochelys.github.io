@@ -8,20 +8,13 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Afficher la navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav mx-auto" id="pagelinks">
         <li class="nav-item"><a class="nav-link page-scroll" href="#nos-methodes">Nos méthodes</a></li>
         <li class="nav-item"><a class="nav-link page-scroll {% if page.layout == 'realisation' %}active{% endif %}" href="#nos-realisations">Nos réalisations</a></li>
         <li class="nav-item"><a class="nav-link page-scroll" href="#notre-equipe">Notre équipe</a></li>
         <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contact</a></li>
-      </ul>
-      <ul class="navbar-nav">
-        {% if page.alternate_path %}
-        <li class="nav-item"><a class="nav-link" href="{{ page.alternate_path }}" lang="en">🇬🇧 English</a></li>
-        {% else %}
-        <li class="nav-item"><a class="nav-link" href="/en/" lang="en">🇬🇧 English</a></li>
-        {% endif %}
       </ul>
     </div>
   </div>

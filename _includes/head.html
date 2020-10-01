@@ -8,9 +8,6 @@
     {{ site.name }} {% if page.title %}- {{ page.title | strip_html | normalize_whitespace | escape }}{% endif %}
   {%- endcapture -%}
   <title>{{ title }}</title>
-  {% if page.alternate_path %}
-  <link rel="alternate" href="{{site.baseurl}}{{page.alternate_path}}" hreflang="{% if page.lang == 'en' %}fr{% else %}en{% endif %}" />
-  {% endif %}
   {%- if page.description %}
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   {% endif -%}

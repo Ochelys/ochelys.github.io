@@ -6,5 +6,4 @@ lang: fr
 layout: home
 title: Prototypage et innovation par les usages
 description: Notre métier, créer des sites et applications Web. Notre principe, s'adapter en continu aux utilisateurs.
-alternate_path: /en
 ---
